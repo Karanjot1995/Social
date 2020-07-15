@@ -33,8 +33,8 @@ module.exports.createSession = function(req,res){
 
 }
 
-// module.exports.signOut = function(req,res){
-//   res.cookie('user_id',"")
+module.exports.signOut = function(req,res){
+  // res.cookie('user_id',"")
 
-//   return res.redirect('/users/sign-in')
-// }
+  // return res.redirect('/users/sign-in')
+}
