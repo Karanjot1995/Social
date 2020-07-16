@@ -5,6 +5,9 @@
     </title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/layout.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+
     <%- style %>
 
   </head>
@@ -13,9 +16,10 @@
   </script>
   <body>
     <%- include('_header') %>
+    <main id="layout-main">
+      <%- body %>
+    </main>
    
-    <%- body %>
-
    <%- include('_footer') %>
    <%- script %>
 

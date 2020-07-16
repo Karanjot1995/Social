@@ -1,0 +1,23 @@
+body{
+  margin:0;
+  text-align: center;
+}
+
+form input{
+  display: block;
+  margin:10px auto
+  /* flex-direction: column; */
+}
+
+#layout-main{
+  height:100%
+}
+ul{
+  padding-left: 0;
+}
+
+#posts-list-container{
+  li{
+    font-size: 30px;
+  }
+}

@@ -1,3 +1,9 @@
-<footer>
-  Page footer
+<footer id='footer'>
+  <p>@Codeial. All rights reserved</p>
+  <ul class="">
+    <li><a href="/" class="logo">Home</a></li>
+    <% if (locals.user) {%>
+      <li><a href="/users/profile">Profile</a></li>
+    <% } %>
+  </ul>
 </footer>
