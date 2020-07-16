@@ -1,0 +1,32 @@
+
+#header{
+  background-color: #0070DF;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .codeial{
+    width:100px;
+    font-size: 30px;
+    margin: auto 10px;
+  }
+
+  .login{
+    display: flex;
+    li{
+      width:100px;
+      font-size: 20px;
+
+    }
+  }
+}
+ul{
+  list-style-type: none;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
