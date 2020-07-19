@@ -6,3 +6,6 @@
   padding: 20px; }
   #footer li {
     margin: 0px 20px 10px; }
+  #footer a {
+    color: white;
+    text-decoration: none; }

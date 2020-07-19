@@ -2,10 +2,22 @@ const User = require('../models/user')
 
 
 module.exports.profile = function(req,res){
-  // console.log(req.user)
-  return res.render('user_profile', {title:'User Profile',user:req.user})
+  console.log(req.params.id)
+  User.findById(req.params.id, (err,user)=>{
+    return res.render('user_profile', {title:'User Profile', profile_user:user})
+  })
+}
 
-  
+module.exports.update = function(req,res){
+  console.log(req.user)
+  if(req.user.id == req.params.id){
+    //update the user fetched by req.params.id and update the body or name and email of it
+    User.findByIdAndUpdate(req.params.id, {name: req.body.name, email:req.body.email}, function(err,user){
+      return res.redirect('back')
+    })
+  }else{
+    return res.status(401).send('Unauthorised')
+  }
 }
 
 //render the sign up page

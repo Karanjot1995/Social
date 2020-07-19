@@ -1,31 +1,43 @@
 
-<h1>
-Codeial | <%= title %>
-
-</h1>
-
+<div id="home">
 
 <section id="feed-posts">
-  <h4>Posts</h4>
+  <h1>
+    Codeial | <%= title %>
+    
+    </h1>
   <% if(locals.user) { %>
-  <form action="/posts/create" id="new-post-form"  method="POST">
-    <textarea name="content" cols="30" rows="3" placeholder="Type Here..."></textarea>
-    <input type="submit" value="Post"/>
-  </form>
+  <div class="create-post">
+    <h4>What's on your mind?</h4>
+    <form action="/posts/create" id="new-post-form"  method="POST">
+      <textarea name="content" cols="30" rows="3" placeholder="Type Here..." required></textarea>
+      <input type="submit" value="Post"/>
+    </form>
+  </div>
   <% } %>
 
-</section>
-<section>
   <div id="posts-list-container">
     <ul>
       <% for(post of posts){ %>
-        <li>
-          <%= post.content %>
-          <br>
-          <small><%= post.user.name %></small>
-        </li>
+        <%- include('_post') %>
       <% } %>
     </ul>
   </div>
-  
 </section>
+
+<section class="user-friends" style="width: 25%;">
+  <% if(locals.user) { %>
+    <h4>Friends</h4>
+    <ul>
+      <% for(user of all_users){ %>
+        <li> 
+          <img class="profile-pic" src="/images/user.png" />
+          <a href="/users/profile/<%= user.id %>"><%= user.name %></a>
+        </li>
+      <% } %>
+    </ul>
+  <% } %>
+</section>
+
+</div>
+

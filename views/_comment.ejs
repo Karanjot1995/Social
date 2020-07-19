@@ -1,0 +1,13 @@
+<li>
+  <img class="profile-pic" src="/images/user.png" />
+  <div>
+    <p><%= comment.content %></p>
+    <br>
+    <small>by: <%= comment.user.name %></small>
+  </div>
+  <% if(locals.user && locals.user.id == comment.user.id) { %>
+  <a href="/comments/delete?id=<%= comment._id %>"><i class="fa fa-close"></i></a>
+  <% }else if(locals.user && locals.user.id == post.user.id){ %>
+    <a href="/comments/delete?id=<%= comment._id %>"><i class="fa fa-close"></i></a>
+  <% } %>
+</li>

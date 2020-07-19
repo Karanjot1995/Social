@@ -1,0 +1,97 @@
+
+#home{
+  display: flex;
+  justify-content: space-between;
+  #feed-posts{
+    margin-left:33%;
+    width: 33%;
+    // margin: auto;
+  
+  }
+  
+  .create-post{
+    background-color: #fff;
+    text-align: center;
+    padding:20px;
+  }
+  
+  // #posts-list-container{
+  //   li{
+  //     font-size: 30px;
+  //   }
+  // }
+  
+  #new-post-form{
+    background-color: #fff;
+  }
+  
+  .post{
+    border:1px solid #e0e0e0;
+    margin:10px auto;
+    background: #fff;
+    .post-content{
+      display: flex;
+      align-items: center;
+      font-size: 25px;
+      text-align: left;
+      padding:30px 10px;
+    }
+  }
+  .profile-pic{
+    height:60px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  .post-comment{
+    text-align: center;
+  
+    border-top:1px solid #e0e0e0;
+  
+    form{
+      margin: 0;
+      input{
+        margin:0;
+        height:50px;
+      }
+      display: flex;
+      justify-content: center;
+    }
+    .write-comment{
+      width: 80%;
+    }
+    .submit-comment{
+      width: 20%;
+    }
+  }
+
+  
+  .comments-list{
+    li{
+      border-top:1px solid #e0e0e0;
+      display: flex;
+      padding:10px;
+      align-items: center;
+      // justify-content: space-between;
+      a{
+        flex:1;
+        align-self: flex-start;
+      }
+      p{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.user-friends{
+  width:25%;
+  padding:20px;
+  li{
+    padding:20px 0px;
+  }
+  .profile-pic{
+    height:30px!important;
+    width:30px;
+
+  }
+}
