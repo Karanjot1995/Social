@@ -37,11 +37,7 @@
       padding:30px 10px;
     }
   }
-  .profile-pic{
-    height:60px;
-    margin-right: 10px;
-    border-radius: 50%;
-  }
+
   .post-comment{
     text-align: center;
   
@@ -90,8 +86,15 @@
     padding:20px 0px;
   }
   .profile-pic{
-    height:30px!important;
-    width:30px;
+    height:40px!important;
+    width:40px;
 
   }
+}
+
+.profile-pic{
+  height:60px;
+  width: 60px;
+  margin-right: 10px;
+  border-radius: 50%;
 }

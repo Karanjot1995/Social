@@ -7,9 +7,14 @@ const db = require('./config/mongoose')
 //used for session cookie
 const session = require('express-session')
 const passport = require('passport')
-const passportLocal  = require('./config/passport-local-strategy')
+const passportLocal = require('./config/passport-local-strategy')
+const passportJWT = require('./config/passport-jwt-strategy')
+
 const MongoStore = require('connect-mongo')(session)
 const sassMiddleware = require('node-sass-middleware')
+const flash = require('connect-flash')
+const customMware = require('./config/middleware')
+
 
 app.use(sassMiddleware({
   /* Options */
@@ -26,6 +31,10 @@ app.use(cookieParser())
 app.use(expressLayouts)
 app.use(express.static('./assets'))
 
+//make the uploads path available to the browser at /uploads
+app.use('/uploads', express.static(__dirname + '/uploads'))
+
+
 //extract style and scripts from sub pages into the layout
 app.set('layout extractStyles' , true)
 app.set('layout extractScripts' , true)
@@ -33,7 +42,7 @@ app.set('layout extractScripts' , true)
 
 //mongo store is used to store the  session cookie in the db
 app.use(session({
-  name:'codeial',
+  name:'social',
   //todo change the secret befor deployment
   secret: 'blahsomething',
   saveUninitialized:false,
@@ -57,7 +66,8 @@ app.use(passport.session())
 
 app.use(passport.setAuthenticatedUser)
 
-
+app.use(flash())
+app.use(customMware.setFlash)
 
 //use express router
 app.use('/', require('./routes'))

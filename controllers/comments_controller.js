@@ -15,6 +15,21 @@ module.exports.create = async function(req,res){
       //add that comment to the comments array of the post foundbyid above
       post.comments.push(newComment)
       post.save()
+
+      // if (req.xhr){
+      //   // Similar for comments to fetch the user's id!
+      //   comment = await comment.populate('user', 'name').execPopulate();
+
+      //   return res.status(200).json({
+      //       data: {
+      //           comment: comment
+      //       },
+      //       message: "Post created!"
+      //   });
+      // }
+
+      req.flash('success', 'Comment published!');
+
       return res.redirect('back')
     }
   }catch(err){
@@ -48,28 +63,4 @@ module.exports.delete = async (req,res)=>{
   
 }
 
-    // Post.findById(comment.post, (err, post)=>{
-    //   if(err){
-    //     console.log('error in deleting comment')
-    //     return
-    //   }
-    //   if(req.user.id == post.user){
-    //     post.comments = post.comments.filter(postcomment=> postcomment != comment.id)
-    //     post.save()
-    //     comment.remove()
-    //     return res.redirect('back')
-    //   }else if(req.user.id != post.user && comment.user == req.user.id){
-    //     post.comments = post.comments.filter(postcomment=> postcomment != comment.id)
-    //     post.save()
-    //     comment.remove()
-    //     return res.redirect('back')
-
-    //   }else{
-    //     return res.redirect('back')
-
-    //   }
-
-
-    // })
- 
 

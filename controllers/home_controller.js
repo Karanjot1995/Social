@@ -6,7 +6,8 @@ const User = require('../models/user')
 
 module.exports.home = async function(req,res){
   try{
-    let allPosts = await Post.find({}).populate('user').populate({path: 'comments', populate: 'user'})  ;
+
+    let allPosts = await Post.find({}).sort('-createdAt').populate('user', {password: 0}).populate({path: 'comments', populate: 'user', options: {sort: { createdAt: -1 }}})  ;
     let users = await User.find({})
     
     return res.render("home", {

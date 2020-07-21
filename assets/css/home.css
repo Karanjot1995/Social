@@ -20,10 +20,6 @@
       font-size: 25px;
       text-align: left;
       padding: 30px 10px; }
-  #home .profile-pic {
-    height: 60px;
-    margin-right: 10px;
-    border-radius: 50%; }
   #home .post-comment {
     text-align: center;
     border-top: 1px solid #e0e0e0; }
@@ -55,5 +51,11 @@
   .user-friends li {
     padding: 20px 0px; }
   .user-friends .profile-pic {
-    height: 30px !important;
-    width: 30px; }
+    height: 40px !important;
+    width: 40px; }
+
+.profile-pic {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+  border-radius: 50%; }
