@@ -34,17 +34,17 @@ module.exports.create = async function(req,res){
 
 module.exports.delete = async function(req,res){
   try{
-    let post = await Post.findById(req.query.id)
+    let post = await Post.findById(req.params.id)
     //since post user is not populated it is equal to the user id itself as given in schema and to convery req.user._id to string use req.user.id
     //.id means converting the object id into string
     if(post.user == req.user.id ){
       post.remove()
-      await Comment.deleteMany({post:req.query.id})
+      await Comment.deleteMany({post:req.params.id})
 
       if(req.xhr){
         return res.status(200).json({
           data:{
-            post_id: req.query.id
+            post_id: req.params.id
           },
           flash:{
             success: 'Post deleted!'

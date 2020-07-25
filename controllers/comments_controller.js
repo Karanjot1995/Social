@@ -41,11 +41,11 @@ module.exports.create = async function(req,res){
 module.exports.delete = async (req,res)=>{
 
   try{
-    let comment = await Comment.findById(req.query.id)
+    let comment = await Comment.findById(req.params.id)
     if(comment.user == req.user.id){
       let postId = comment.post
       comment.remove();
-      await Post.findByIdAndUpdate(postId,{$pull: {comments: req.query.id }})
+      await Post.findByIdAndUpdate(postId,{$pull: {comments: req.params.id }})
       return res.redirect('back');
     }else{
       let post = await Post.findById(comment.post)

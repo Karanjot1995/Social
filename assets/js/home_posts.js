@@ -40,7 +40,7 @@ let newPostDom = function(post){
   return $(`
   <li  class="post" id="post-${post._id}">
 
-  <a href="/posts/delete?id=${post._id}" class="delete-post-button"><i class="fa fa-close"></i></a>
+  <a href="/posts/delete/${post._id}" class="delete-post-button"><i class="fa fa-close"></i></a>
 
 
   <div class="post-content">

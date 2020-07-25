@@ -27,6 +27,11 @@ router.get('/sign-out', usersController.signOut)
 // {failureRedirect: '/users/sign-in'}
 
 
+//scope is the info we are looking to fetch
+router.get('/auth/google', passport.authenticate('google', {scope:  ['profile', 'email']}))
+
+router.get('/auth/google/callback', passport.authenticate('google',{failureRedirect: '/users/sign-in'}), usersController.createSession)
+
 
 
 console.log('router working')

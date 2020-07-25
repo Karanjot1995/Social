@@ -1,7 +1,7 @@
 <li  class="post" id="post-<%= post._id %>">
 
   <% if(locals.user && locals.user.id == post.user.id) { %>
-  <a href="/posts/delete?id=<%= post._id %>" class="delete-post-button"><i class="fa fa-close"></i></a>
+  <a href="/posts/delete/<%= post._id %>" class="delete-post-button"><i class="fa fa-close"></i></a>
   <% } %>
 
 
@@ -11,7 +11,6 @@
     <%}else{%>
       <img class="profile-pic" src="/images/user.png"/>
     <%}%> 
-    <%=  console.log(locals) %>
     <div>
       <p><%= post.content %></p>
       <small><%= post.user.name %></small>
