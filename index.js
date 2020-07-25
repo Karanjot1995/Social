@@ -1,10 +1,10 @@
+
 require('dotenv').config()
 const express = require('express');
 const cookieParser = require('cookie-parser')
 const port = process.env.PORT;
 const app = express();
-console.log(port)
-
+console.log(process.env.CLIENT_ID)
 
 const expressLayouts = require('express-ejs-layouts')
 const db = require('./config/mongoose')
@@ -21,6 +21,7 @@ const MongoStore = require('connect-mongo')(session)
 const sassMiddleware = require('node-sass-middleware')
 const flash = require('connect-flash')
 const customMware = require('./config/middleware')
+console.log(process.env.CLIENT)
 
 
 app.use(sassMiddleware({
