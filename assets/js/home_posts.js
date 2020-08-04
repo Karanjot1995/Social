@@ -1,42 +1,38 @@
 //method to submit form data for new post using ajax
-let createPost = function(){
-  let newPostForm = $('#new-post-form')
-  newPostForm.submit(function(e){
+let createPost = function () {
+  let newPostForm = $("#new-post-form");
+  newPostForm.submit(function (e) {
     e.preventDefault();
     $.ajax({
-      type: 'post',
-      url: '/posts/create',
+      type: "post",
+      url: "/posts/create",
       //serialize converts the data received into json like (key: value )
       data: newPostForm.serialize(),
-      success: function(data){
+      success: function (data) {
         // if(data.flash.success && data.flash.success.length>0){
-          
-        //   } 
-        let newPost = newPostDom(data.data.post)
-        $('#posts-list-container>ul').prepend(newPost)
-        deletePost($(' .delete-post-button',newPost))
+
+        //   }
+        let newPost = newPostDom(data.data.post);
+        $("#posts-list-container>ul").prepend(newPost);
+        deletePost($(" .delete-post-button", newPost));
+        // toggleLikes(" .toggle-like-button", newPost);
         new Noty({
-          theme: 'relax',
-          text: 'Post published!',
-          type: 'success',
-          loyout: 'topRight',
-          timeout: 1500
-        }).show()
+          theme: "relax",
+          text: "Post published!",
+          type: "success",
+          loyout: "topRight",
+          timeout: 1500,
+        }).show();
       },
-      error : function(error){
-        console.log(error.responseText)
-      }
-    })
-
-  })
-
-}
-
-
-
+      error: function (error) {
+        console.log(error.responseText);
+      },
+    });
+  });
+};
 
 //method to create a post in DOM
-let newPostDom = function(post){
+let newPostDom = function (post) {
   return $(`
   <li  class="post" id="post-${post._id}">
 
@@ -49,12 +45,20 @@ let newPostDom = function(post){
       <p>${post.content}</p>
       <small><${post.user.name}</small>
     </div>
-    
-
   </div>
   <div class="post-comment">
-    <h3>Comment</h3>
-    <form action="/comments/create" id="new-comment-form"  method="POST">
+    <div class="d-flex align-items-center">
+      <div class="p-3">
+        <a
+          class="toggle-like-button"
+          data-likes="0"
+          href="/likes/toggle/?id=${post._id}&type=Post"
+        >
+          0 Likes
+        </a>
+      </div>
+    </div>
+    <form action="/comments/create" id="post-${post._id}-comments-form"  method="POST">
       <input type="text" class="write-comment" name="content" placeholder="Write a comment..." required/>
       <input name="post" value="${post._id}" type="hidden"/>
       <input type="submit" value="Comment" class="submit-comment"/>
@@ -66,38 +70,58 @@ let newPostDom = function(post){
     </ul>
   </div>
 </li>
-  `)
-}
-
-
-
+  `);
+};
 
 //method to delete a post from DOM
-let deletePost = function(deleteLink){
-  $(deleteLink).click(function(e){
-    e.preventDefault()
+let deletePost = function (deleteLink) {
+  $(deleteLink).click(function (e) {
+    e.preventDefault();
     $.ajax({
-      type: 'get',
-      url: $(deleteLink).prop('href'),
-      success: function(data){
-        $(`#post-${data.data.post_id}`).remove()
+      type: "get",
+      url: $(deleteLink).prop("href"),
+      success: function (data) {
+        $(`#post-${data.data.post_id}`).remove();
         new Noty({
-          theme: 'relax',
-          text: 'Post deleted!',
-          type: 'success',
-          loyout: 'topRight',
-          timeout: 1500
-        }).show()
+          theme: "relax",
+          text: "Post deleted!",
+          type: "success",
+          loyout: "topRight",
+          timeout: 1500,
+        }).show();
       },
-      error: function(err){
-        console.log(err.responseText)
-      }
-    })
-  })
-}
+      error: function (err) {
+        console.log(err.responseText);
+      },
+    });
+  });
+};
 
+// function toggleLikes(toggleBtn) {
+//   $(toggleBtn).click(function (e) {
+//     e.preventDefault();
+//     $.ajax({
+//       type: "GET",
+//       url: $(toggleBtn).attr("href"),
+//     })
+//       .done(function (data) {
+//         let likesCount = parseInt($(toggleBtn).attr("data-likes"));
+//         console.log(likesCount);
+//         if (data.data.deleted == true) {
+//           likesCount -= 1;
+//         } else {
+//           likesCount += 1;
+//         }
 
+//         $(toggleBtn).attr("data-likes", likesCount);
+//         $(toggleBtn).html(`${likesCount} Likes`);
+//       })
+//       .fail(function (errData) {
+//         console.log("error in completing the request", errData);
+//       });
+//   });
+// }
 
-createPost()
+// $(".toggle-like-button").click(toggleLikes(this));
 
-
+createPost();

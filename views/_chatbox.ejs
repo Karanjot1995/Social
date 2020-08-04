@@ -1,0 +1,29 @@
+<link href="/css/chatbox.css" rel="stylesheet">
+
+
+<%if(locals.user){%>
+<div id="chatbox">
+  <!-- <% for(friend of locals.user.friendships){%>
+  <% if(locals.user.id == friend.from_user.id) { %>
+  <p><%= friend.to_user.name %></p>
+
+  <%}else {%>
+  <p>hi, <%= friend.from_user.name %></p>
+
+  <%}%>
+  <%}%> -->
+  <ul id="chat-message-list" class="d-flex flex-column">
+    <li class="friend">
+
+    </li>
+    <li class="user align-self-end">
+
+    </li>
+
+  </ul>
+  <form method="POST" action="/chats" class="d-flex w-100">
+    <input type="text" name="chat" class="w-75 form-control" />
+    <input type="submit" value="Send" class="w-25 form-control chat-send bg-success" />
+  </form>
+</div>
+<%}%>

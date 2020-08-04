@@ -1,48 +1,86 @@
-
 <div id="home">
-
-<section id="feed-posts">
-  <h1>
-    Social | <%= title %>
-    
+  <section id="feed-posts">
+    <h1>
+      Social | <%= title %>
     </h1>
-  <% if(locals.user) { %>
-  <div class="create-post">
-    <h4>What's on your mind?</h4>
-    <form action="/posts/create" id="new-post-form"  method="POST">
-      <textarea name="content" cols="30" rows="3" placeholder="Type Here..." required></textarea>
-      <input type="submit" value="Post"/>
-    </form>
-  </div>
-  <% } %>
+    <% if(locals.user) { %>
+    <div class="create-post">
+      <h4>What's on your mind?</h4>
+      <form action="/posts/create" id="new-post-form" method="POST">
+        <textarea name="content" cols="30" rows="3" placeholder="Type Here..." required></textarea>
+        <input type="submit" value="Post" />
+      </form>
+    </div>
+    <% } %>
 
-  <div id="posts-list-container">
-    <ul>
-      <% for(post of posts){ %>
-        <%- include('_post') %>
-      <% } %>
-    </ul>
-  </div>
-</section>
+    <div id="posts-list-container">
+      <ul>
+        <% for(post of posts){ %> <%- include('_post') %> <% } %>
+      </ul>
+    </div>
+  </section>
 
-<section class="user-friends" style="width: 25%;">
-  <% if(locals.user) { %>
+  <section class="user-friends" style="width: 25%;">
+    <% if(locals.user) { %>
     <h4>Friends</h4>
+    <%for(friendship of locals.user.friendships){%>
+
+    <% if(locals.user.id == friendship.from_user.id) { %>
     <ul>
-      <% for(user of all_users){ %>
-        <li> 
-          <%  if(user.avatar){ %>
-            <img class="profile-pic" src="<%= user.avatar %>"/>
-          <%}else{%>
-            <img class="profile-pic" src="/images/user.png"/>
-          <%}%> 
-          <a href="/users/profile/<%= user.id %>"><%= user.name %></a>
-        </li>
-      <% } %>
+      <li>
+        <% if(friendship.to_user.avatar){ %>
+        <img class="profile-pic" src="<%= friendship.to_user.avatar %>" />
+        <%}else{%>
+        <img class="profile-pic" src="/images/user.png" />
+        <%}%>
+          <a href="/users/profile/<%= friendship.to_user.id %>">
+        <%= friendship.to_user.name %>
+        </a>
+      </li>
     </ul>
-  <% } %>
-</section>
+    <%}else{%>
+    <ul>
+      <li>
+        <% if(friendship.from_user.avatar){ %>
+        <img class="profile-pic" src="<%= friendship.from_user.avatar %>" />
+        <%}else{%>
+        <img class="profile-pic" src="/images/user.png" />
+        <%}%>
+                  <a href="/users/profile/<%= friendship.from_user.id %>">
+        <%= friendship.from_user.name %>
+        </a>
+      </li>
+    </ul>
+    <%}%>
+
+
+    <%}%>
+    <h4>All Users</h4>
+
+    <% } %>
+
+    <div>
+      <% for(let user of all_users){ %>
+      <ul>
+        <li>
+          <% if(user.avatar){ %>
+          <img class="profile-pic" src="<%= user.avatar %>" />
+          <%}else{%>
+          <img class="profile-pic" src="/images/user.png" />
+          <%}%>
+              <a href="/users/profile/<%= user.id %>">
+          <%= user.name %>
+          </a>
+        </li>
+      </ul>
+      <%}%>
+    </div>
+
+  </section>
+  <section>
+    <%- include('_chatbox') %>
+  </section>
 
 </div>
-<script src="/js/home_posts.js" ></script>
-
+<script src="/js/home_posts.js"></script>
+<script src="/js/home_post_comments.js"></script>
