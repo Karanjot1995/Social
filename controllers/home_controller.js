@@ -10,12 +10,10 @@ module.exports.home = async function (req, res) {
       .populate("user", { password: 0 })
       .populate({
         path: "comments",
-        populate: {
-          path: "user",
-        },
-        populate: {
-          path: "likes",
-        },
+        populate: [
+          { path: "user", },
+          { path: "likes", }
+        ],
         options: { sort: { createdAt: -1 } },
       })
       .populate("likes");

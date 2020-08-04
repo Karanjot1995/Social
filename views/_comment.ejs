@@ -6,26 +6,19 @@
   <%}%>
   <div>
     <p><%= comment.content %></p>
-    <small>by: <%= comment.user.name %></small>
+  <small>by: <%= comment.user.name %></small>
   </div>
   <div class="d-flex flex-column align-items-end" style="flex: 1;">
     <% if(locals.user && locals.user.id == comment.user.id) { %>
-    <a class="delete-comment-button" href="/comments/delete/<%= comment._id %>"
-      ><i class="fa fa-close"></i
-    ></a>
+    <a class="delete-comment-button" href="/comments/delete/<%= comment._id %>"><i class="fa fa-close"></i></a>
     <% }else if(locals.user && locals.user.id == post.user.id){ %>
-    <a class="delete-comment-button" href="/comments/delete/<%= comment._id %>"
-      ><i class="fa fa-close"></i
-    ></a>
+    <a class="delete-comment-button" href="/comments/delete/<%= comment._id %>"><i class="fa fa-close"></i></a>
 
     <% } %>
     <div>
       <% if (locals.user){ %>
-      <a
-        class="toggle-like-button"
-        data-likes="<%= comment.likes.length %>"
-        href="/likes/toggle/?id=<%=comment._id%>&type=Comment"
-      >
+      <a class="toggle-like-button" data-likes="<%= comment.likes.length %>"
+        href="/likes/toggle/?id=<%=comment._id%>&type=Comment">
         <%= comment.likes.length %> Likes
       </a>
       <% }else{ %>
