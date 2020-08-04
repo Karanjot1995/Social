@@ -2,7 +2,7 @@
 
 
 <%if(locals.user){%>
-<div id="chatbox">
+<div id="user-chat-box">
   <!-- <% for(friend of locals.user.friendships){%>
   <% if(locals.user.id == friend.from_user.id) { %>
   <p><%= friend.to_user.name %></p>
@@ -12,18 +12,18 @@
 
   <%}%>
   <%}%> -->
-  <ul id="chat-message-list" class="d-flex flex-column">
+  <ul id="chat-message-list">
     <li class="friend">
-
+      <p>Other Message</p>
     </li>
-    <li class="user align-self-end">
-
+    <li class="user">
+      <p>My Message</p>
     </li>
 
   </ul>
-  <form method="POST" action="/chats" class="d-flex w-100">
-    <input type="text" name="chat" class="w-75 form-control" />
-    <input type="submit" value="Send" class="w-25 form-control chat-send bg-success" />
-  </form>
+  <div id="chat-message-input-container" class="w-100 d-flex">
+    <input id="chat-message-input" class="w-75 chat-input" placeholder="Type message here">
+    <button id="send-message" class="w-25 chat-send bg-success">Send</button>
+  </div>
 </div>
 <%}%>
