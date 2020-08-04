@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require("express");
+const envm = require('./config/environment')
 const cookieParser = require("cookie-parser");
 const port = process.env.PORT;
 const app = express();
@@ -18,18 +19,25 @@ const MongoStore = require("connect-mongo")(session);
 const sassMiddleware = require("node-sass-middleware");
 const flash = require("connect-flash");
 const customMware = require("./config/middleware");
+
+//setup chat server to
 const chatServer = require('http').Server(app)
 // const io = require('socket.io')(chatServer, options);
 const chatSockets = require('./config/chat_sockets').chatSockets(chatServer)
 chatServer.listen(5050)
 console.log('Chat server listening on port 5050')
+const path = require('path')
+
+// console.log(env.asset_path)
+
+
 console.log(process.env.CLIENT);
 
 app.use(
   sassMiddleware({
     /* Options */
-    src: "./assets/scss",
-    dest: "./assets/css",
+    src: path.join(__dirname, envm.asset_path, '/scss'),
+    dest: path.join(__dirname, envm.asset_path, '/css'),
     debug: true,
     outputStyle: "extended",
     prefix: "/css", // Where prefix is at <link rel="stylesheets" href="prefix/style.css"/>
@@ -40,7 +48,7 @@ app.use(express.urlencoded());
 app.use(cookieParser());
 
 app.use(expressLayouts);
-app.use(express.static("./assets"));
+app.use(express.static(envm.asset_path));
 
 //make the uploads path available to the browser at /uploads
 app.use("/uploads", express.static(__dirname + "/uploads"));
@@ -54,7 +62,7 @@ app.use(
   session({
     name: "social",
     //todo change the secret befor deployment
-    secret: "blahsomething",
+    secret: envm.seession_cookie_key,
     saveUninitialized: false,
     resave: false,
     cookie: {
