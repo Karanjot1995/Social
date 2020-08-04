@@ -39,9 +39,6 @@
     display: flex;
     padding: 10px;
     align-items: center; }
-    #home .comments-list li a {
-      flex: 1;
-      align-self: flex-start; }
     #home .comments-list li p {
       margin-bottom: 0; }
 

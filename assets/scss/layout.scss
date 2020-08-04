@@ -17,6 +17,7 @@ form input{
   h1{
     text-align: center;
     margin:0;
+    color: #444;
     padding-bottom:20px
   }
   
@@ -42,4 +43,53 @@ ul{
 
 .hide{
   display: none;
+}
+
+#g-login-btn{
+  &:hover{
+    text-decoration: none;
+  }
+  #customBtn {
+    display: flex;
+    background: white;
+    color: #444;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+  }
+  #customBtn:hover {
+    cursor: pointer;
+  }
+  span.label {
+    font-family: serif;
+    font-weight: normal;
+  }
+  
+  span.buttonText {
+    margin-left: 25%;
+    font-size: 16px;
+    font-weight: bold;
+    /* Use the Roboto font that is loaded in the <head> */
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+#signin-page, #signup-page{
+  background: white;
+  padding:20px;
+  max-width: 350px;
+  margin: auto;
+  input{
+    width:80%;
+    height: 35px;
+  }
+}
+
+.signin-btn, .signup-btn{
+  background-color: #0070DF;
+  color: #fff;
+  
 }
