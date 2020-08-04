@@ -1,50 +1,59 @@
-<link href="/css/user_profile.css" rel="stylesheet">
+<link href="/css/user_profile.css" rel="stylesheet" />
 <div class="text-center">
   <h1>
     Social | My Profile
-    
-    </h1>
-    <%  if(profile_user.avatar){ %>
-    <img class="profile-pic mr-0" src="<%=  profile_user.avatar %>" style="height: 100px; width: 100px;"/>
-    <%}else{%>
-      <img class="profile-pic mr-0" src="/images/user.png" style="height: 100px; width: 100px;"/>
-    <%}%>
+  </h1>
+  <% if(profile_user.avatar){ %>
+  <img class="profile-pic mr-0" src="<%=  profile_user.avatar %>" style="height: 100px; width: 100px;" />
+  <%}else{%>
+  <img class="profile-pic mr-0" src="/images/user.png" style="height: 100px; width: 100px;" />
+  <%}%>
 
-    <p><%=  profile_user.name %></p>
-    <p><%=  profile_user.email %></p>
-    
-    <% if(profile_user.id == user.id) { %>
-      <button onclick="editProfile()">Edit Profile</button>
-      <!-- if user matches then show form else show profile info -->
-      <form action="/users/update/<%= profile_user.id %>" method="POST" class="d-none" id="update-form" enctype="multipart/form-data">
-        <div class="form-group row">
-          <label class="col-form-label">Name:</label>
-          <input type="text" name="name" placeholder="Edit name..." value="<%= profile_user.name %>" required/>
-        </div>
-        <div class="form-group row">
-          <label class="col-form-label">Email:</label>
-          <input type="text" name="email" placeholder="Edit email..." value="<%= profile_user.email %>" required/>
-        </div>
-        <input id="set-avatar" name="avatar" type="file"  placeholder="Profile picture" onchange="preview_image(event)">
-        <div class="preview d-none">
-          <div class="d-flex flex-column align-items-center">
-            <img id="output_image" />
-            <input type="button" class="remove-image" value="Remove"  onclick="removeImage(event)"/>
-          </div>
-        </div>
-        <div class="d-flex justify-content-center">
-          <input type="submit" class="bg-primary mx-0" value="Update" id="save"/>
-          <input type="button" class="mx-0" value="Cancel" onclick="cancelEdit()" />
-        </div>
-      </form>
-    <% }else{ %>
+  <p><%= profile_user.name %></p>
+  <p><%= profile_user.email %></p>
 
-      
-    <% } %>
+  <% if(profile_user.id == user.id) { %>
+  <button onclick="editProfile()">Edit Profile</button>
+  <!-- if user matches then show form else show profile info -->
+  <form action="/users/update/<%= profile_user.id %>" method="POST" class="d-none" id="update-form"
+    enctype="multipart/form-data">
+    <div class="form-group row">
+      <label class="col-form-label">Name:</label>
+      <input type="text" name="name" placeholder="Edit name..." value="<%= profile_user.name %>" required />
+    </div>
+    <div class="form-group row">
+      <label class="col-form-label">Email:</label>
+      <input type="text" name="email" placeholder="Edit email..." value="<%= profile_user.email %>" required />
+    </div>
+    <input id="set-avatar" name="avatar" type="file" placeholder="Profile picture" onchange="preview_image(event)" />
+    <div class="preview d-none">
+      <div class="d-flex flex-column align-items-center">
+        <img id="output_image" />
+        <input type="button" class="remove-image" value="Remove" onclick="removeImage(event)" />
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <input type="submit" class="bg-primary mx-0" value="Update" id="save" />
+      <input type="button" class="mx-0" value="Cancel" onclick="cancelEdit()" />
+    </div>
+  </form>
+  <% }else{ %>
+
+  <!-- <%for(friend of locals.user.friendships){%>
+  <%=  console.log(friend.to_user.id , friend.from_user.id,profile_user.id   ) %>
+
+  <% if(friend.to_user.id == profile_user.id || friend.from_user.id == profile_user.id){%>
+  <a href="#">Remove Friend</a>
+
+  <%}else{%>
+
+  <%}%>
+  <%}%> -->
+
+
+
+  <% } %>
+  <a href="/users/add-friend/?id=<%= profile_user.id %>">Add Friend</a>
+
 
 </div>
-
-
-
-
-

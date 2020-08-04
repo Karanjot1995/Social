@@ -17,9 +17,6 @@ passport.use(new googleStrategy({
         console.log('Error in google strategy passport', err)
         return
       }
-      console.log(accessToken)
-      console.log(refreshToken)
-      console.log(profile)
       if(user){
         //if found, set the user found in the DB as the google details
         return done(null, user)

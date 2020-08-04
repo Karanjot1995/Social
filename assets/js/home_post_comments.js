@@ -47,5 +47,47 @@
 
 // }
 
+// $('#comment-like').click(function(e){
+//   e.preventDefault()
+//   console.log($('#comment-like'))
+// })
+
+// function createLikes (){
+//   let newLikeForm = $(`#likes-form`);
+//   newLikeForm.submit(function(e){
+//     e.preventDefault();
+
+//       $.ajax({
+//           type: 'post',
+//           url: '/likes/toggle',
+//           data: newLikeForm.serialize(),
+//           success: function(data){
+//               let newComment = newCommentDom(data.data.comment);
+//               $(`#post-comments`).prepend(newComment);
+//               // deleteComment($(' .delete-comment-button', newComment));
+
+//               new Noty({
+//                   theme: 'relax',
+//                   text: "Comment published!",
+//                   type: 'success',
+//                   layout: 'topRight',
+//                   timeout: 1500
+                  
+//               }).show();
+
+//           }, error: function(error){
+//               console.log(error.responseText);
+//           }
+//       });
+//   })
+// }
+
+// createLikes()
+
+
+// function counter(){
+//   console.log($('#comment-like') , this)
+// }
+
 
 // createComment()

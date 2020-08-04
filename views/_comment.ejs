@@ -1,16 +1,38 @@
 <li id="comment-<%= comment._id %>">
-  <%  if(comment.user.avatar){ %>
-    <img class="profile-pic" src="<%= comment.user.avatar %>"/>
+  <% if(comment.user.avatar){ %>
+  <img class="profile-pic" src="<%= comment.user.avatar %>" />
   <%}else{%>
-    <img class="profile-pic" src="/images/user.png"/>
-  <%}%> 
+  <img class="profile-pic" src="/images/user.png" />
+  <%}%>
   <div>
     <p><%= comment.content %></p>
     <small>by: <%= comment.user.name %></small>
   </div>
-  <% if(locals.user && locals.user.id == comment.user.id) { %>
-  <a  class="delete-comment-button" href="/comments/delete/<%= comment._id %>"><i class="fa fa-close"></i></a>
-  <% }else if(locals.user && locals.user.id == post.user.id){ %>
-    <a class="delete-comment-button" href="/comments/delete/<%= comment._id %>"><i class="fa fa-close"></i></a>
-  <% } %>
+  <div class="d-flex flex-column align-items-end" style="flex: 1;">
+    <% if(locals.user && locals.user.id == comment.user.id) { %>
+    <a class="delete-comment-button" href="/comments/delete/<%= comment._id %>"
+      ><i class="fa fa-close"></i
+    ></a>
+    <% }else if(locals.user && locals.user.id == post.user.id){ %>
+    <a class="delete-comment-button" href="/comments/delete/<%= comment._id %>"
+      ><i class="fa fa-close"></i
+    ></a>
+
+    <% } %>
+    <div>
+      <% if (locals.user){ %>
+      <a
+        class="toggle-like-button"
+        data-likes="<%= comment.likes.length %>"
+        href="/likes/toggle/?id=<%=comment._id%>&type=Comment"
+      >
+        <%= comment.likes.length %> Likes
+      </a>
+      <% }else{ %>
+      <div class="p-3">
+        <%= comment.likes.length %> Likes
+      </div>
+      <% } %>
+    </div>
+  </div>
 </li>
