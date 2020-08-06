@@ -1,4 +1,4 @@
-<link href="/css/user_profile.css" rel="stylesheet" />
+<link href="<%= assetPath('css/user_profile.css')%>" rel="stylesheet" />
 <div class="text-center">
   <h1>
     Social | My Profile
@@ -6,7 +6,7 @@
   <% if(profile_user.avatar){ %>
   <img class="profile-pic mr-0" src="<%=  profile_user.avatar %>" style="height: 100px; width: 100px;" />
   <%}else{%>
-  <img class="profile-pic mr-0" src="/images/user.png" style="height: 100px; width: 100px;" />
+  <img class="profile-pic mr-0" src="<%= assetPath('images/user.png') %>" style="height: 100px; width: 100px;" />
   <%}%>
 
   <p><%= profile_user.name %></p>

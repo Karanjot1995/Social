@@ -1,0 +1,328 @@
+[0mGET / [36m304[0m 30.466 ms - -[0m
+[0mGET / [36m304[0m 28.994 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 3.411 ms - -[0m
+[0mGET /users/css/layout.css [33m404[0m 2.466 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 2.511 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 2.338 ms - 159[0m
+[0mGET /users/css/home.css [33m404[0m 4.211 ms - 157[0m
+[0mGET /users/js/home.js [33m404[0m 3.399 ms - 155[0m
+[0mGET /users/images/google-logo.png [33m404[0m 1.536 ms - 167[0m
+[0mGET /users/sign-in [36m304[0m 4.089 ms - -[0m
+[0mGET /users/css/layout.css [33m404[0m 1.659 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 2.047 ms - 159[0m
+[0mGET /users/css/home.css [33m404[0m 1.975 ms - 157[0m
+[0mGET /users/css/footer.css [33m404[0m 5.163 ms - 159[0m
+[0mGET /users/js/home.js [33m404[0m 2.943 ms - 155[0m
+[0mGET /users/images/google-logo.png [33m404[0m 1.605 ms - 167[0m
+[0mGET /users/sign-in [36m304[0m 4.471 ms - -[0m
+[0mGET /users/css/layout.css [33m404[0m 1.606 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 24.356 ms - 159[0m
+[0mGET /users/css/home.css [33m404[0m 8.502 ms - 157[0m
+[0mGET /users/css/footer.css [33m404[0m 8.579 ms - 159[0m
+[0mGET /users/images/google-logo.png [33m404[0m 3.866 ms - 167[0m
+[0mGET /users/js/home.js [33m404[0m 98.525 ms - 155[0m
+[0mGET /users/sign-up [32m200[0m 5.512 ms - 2230[0m
+[0mGET /users/css/layout.css [33m404[0m 1.372 ms - 159[0m
+[0mGET /users/js/home.js [33m404[0m 3.064 ms - 155[0m
+[0mGET /users/css/header.css [33m404[0m 3.892 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 3.284 ms - 159[0m
+[0mGET /users/css/home.css [33m404[0m 3.180 ms - 157[0m
+[0mGET /users/sign-up [36m304[0m 2.589 ms - -[0m
+[0mGET /users/js/home.js [33m404[0m 2.551 ms - 155[0m
+[0mGET /users/css/layout.css [33m404[0m 1.485 ms - 159[0m
+[0mGET /users/css/home.css [33m404[0m 2.411 ms - 157[0m
+[0mGET /users/css/footer.css [33m404[0m 1.985 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 1.520 ms - 159[0m
+[0mGET /users/sign-in [36m304[0m 2.522 ms - -[0m
+[0mGET /users/css/layout.css [33m404[0m 1.852 ms - 159[0m
+[0mGET /users/js/home.js [33m404[0m 2.414 ms - 155[0m
+[0mGET /users/css/home.css [33m404[0m 2.526 ms - 157[0m
+[0mGET /users/css/header.css [33m404[0m 4.725 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 25.605 ms - 159[0m
+[0mGET /users/images/google-logo.png [33m404[0m 1.819 ms - 167[0m
+[0mGET /users/sign-up [36m304[0m 2.366 ms - -[0m
+[0mGET /users/css/layout.css [33m404[0m 1.410 ms - 159[0m
+[0mGET /users/js/home.js [33m404[0m 9.932 ms - 155[0m
+[0mGET /users/css/footer.css [33m404[0m 10.201 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 8.609 ms - 159[0m
+[0mGET /users/css/home.css [33m404[0m 11.093 ms - 157[0m
+[0mGET / [36m304[0m 59.240 ms - -[0m
+[0mGET / [36m304[0m 27.575 ms - -[0m
+[0mGET / [36m304[0m 28.942 ms - -[0m
+[0mGET / [36m304[0m 25.788 ms - -[0m
+[0mGET / [36m304[0m 26.725 ms - -[0m
+[0mGET / [36m304[0m 28.023 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 3.112 ms - -[0m
+[0mGET /users/css/layout.css [33m404[0m 3.676 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 6.326 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 2.870 ms - 159[0m
+[0mGET /users/css/home.css [33m404[0m 9.613 ms - 157[0m
+[0mGET /users/js/home.js [33m404[0m 10.313 ms - 155[0m
+[0mGET /users/images/google-logo.png [33m404[0m 1.739 ms - 167[0m
+[0mGET /users/sign-in [32m200[0m 4.380 ms - 2125[0m
+[0mGET /users/css/layout.css [33m404[0m 4.563 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 5.198 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 2.922 ms - 159[0m
+[0mGET /users/css/home.css [33m404[0m 2.860 ms - 157[0m
+[0mGET /users/js/home.js [33m404[0m 1.817 ms - 155[0m
+[0mGET /users/sign-in [36m304[0m 3.338 ms - -[0m
+[0mGET /users/css/layout.css [33m404[0m 1.915 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 2.023 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 3.085 ms - 159[0m
+[0mGET /users/css/home.css [33m404[0m 2.888 ms - 157[0m
+[0mGET /users/js/home.js [33m404[0m 3.393 ms - 155[0m
+[0mGET /users/sign-in [36m304[0m 7.936 ms - -[0m
+[0mGET /users/css/layout.css [33m404[0m 13.781 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 8.311 ms - 159[0m
+[0mGET /users/js/home.js [33m404[0m 10.441 ms - 155[0m
+[0mGET /users/css/footer.css [33m404[0m 8.299 ms - 159[0m
+[0mGET /users/css/home.css [33m404[0m 8.566 ms - 157[0m
+[0mPOST /users/create-session [36m302[0m 140.800 ms - 46[0m
+[0mGET / [32m200[0m 34.819 ms - 17368[0m
+[0mGET /users/profile/5f0e9a4c69a45a09a20afc5e [32m200[0m 11.789 ms - 2970[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 11.017 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 19.574 ms - 167[0m
+[0mGET /users/profile/css/home.css [33m404[0m 18.347 ms - 165[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 24.248 ms - 173[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 26.631 ms - 167[0m
+[0mGET /users/profile/js/home.js [33m404[0m 28.334 ms - 163[0m
+[0mGET /users/profile/5f0e9a4c69a45a09a20afc5e [36m304[0m 10.356 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 15.487 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 22.189 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 20.413 ms - 173[0m
+[0mGET /users/profile/css/home.css [33m404[0m 21.773 ms - 165[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 28.314 ms - 167[0m
+[0mGET /users/profile/js/home.js [33m404[0m 29.965 ms - 163[0m
+[0mGET / [32m200[0m 25.929 ms - 17187[0m
+[0mGET / [36m304[0m 33.330 ms - -[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [32m200[0m 12.688 ms - 1900[0m
+[0mGET /users/profile/css/header.css [33m404[0m 20.588 ms - 167[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 13.656 ms - 167[0m
+[0mGET /users/profile/js/home.js [33m404[0m 25.754 ms - 163[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 25.587 ms - 173[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 27.674 ms - 167[0m
+[0mGET /users/profile/css/home.css [33m404[0m 32.209 ms - 165[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [36m304[0m 11.596 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 22.802 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 25.779 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 27.513 ms - 173[0m
+[0mGET /users/profile/css/home.css [33m404[0m 34.905 ms - 165[0m
+[0mGET /users/profile/js/home.js [33m404[0m 35.127 ms - 163[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 38.193 ms - 167[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [36m304[0m 9.782 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 14.273 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 21.601 ms - 167[0m
+[0mGET /users/profile/css/home.css [33m404[0m 22.642 ms - 165[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 22.243 ms - 173[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 28.339 ms - 167[0m
+[0mGET /users/profile/js/home.js [33m404[0m 29.932 ms - 163[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [36m304[0m 10.290 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 12.065 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 23.204 ms - 167[0m
+[0mGET /users/profile/css/home.css [33m404[0m 26.789 ms - 165[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 33.358 ms - 167[0m
+[0mGET /users/profile/js/home.js [33m404[0m 29.759 ms - 163[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 29.803 ms - 173[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [36m304[0m 23.280 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 16.847 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 26.296 ms - 167[0m
+[0mGET /users/profile/js/home.js [33m404[0m 24.885 ms - 163[0m
+[0mGET /users/profile/css/home.css [33m404[0m 32.947 ms - 165[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 32.296 ms - 173[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 35.384 ms - 167[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [36m304[0m 38.764 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 23.197 ms - 167[0m
+[0mGET /users/profile/js/home.js [33m404[0m 43.904 ms - 163[0m
+[0mGET /users/profile/css/header.css [33m404[0m 54.496 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 51.997 ms - 173[0m
+[0mGET /users/profile/css/home.css [33m404[0m 53.750 ms - 165[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 57.418 ms - 167[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [36m304[0m 11.674 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 14.097 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 23.497 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 26.000 ms - 173[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 39.792 ms - 167[0m
+[0mGET /users/profile/js/home.js [33m404[0m 44.970 ms - 163[0m
+[0mGET /users/profile/css/home.css [33m404[0m 39.963 ms - 165[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [36m304[0m 35.281 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 13.650 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 58.055 ms - 167[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 62.253 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 57.705 ms - 173[0m
+[0mGET /users/profile/js/home.js [33m404[0m 60.073 ms - 163[0m
+[0mGET /users/profile/css/home.css [33m404[0m 66.711 ms - 165[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 16.694 ms - 173[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [36m304[0m 10.877 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 18.978 ms - 167[0m
+[0mGET /users/profile/css/home.css [33m404[0m 29.695 ms - 165[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 30.960 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 26.360 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 29.925 ms - 173[0m
+[0mGET /users/profile/js/home.js [33m404[0m 28.911 ms - 163[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [36m304[0m 12.142 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 25.170 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 20.623 ms - 167[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 25.581 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 26.539 ms - 173[0m
+[0mGET /users/profile/css/home.css [33m404[0m 30.097 ms - 165[0m
+[0mGET /users/profile/js/home.js [33m404[0m 27.644 ms - 163[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [36m304[0m 11.221 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 8.982 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 22.064 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 18.686 ms - 173[0m
+[0mGET /users/profile/js/home.js [33m404[0m 24.313 ms - 163[0m
+[0mGET /users/profile/css/home.css [33m404[0m 25.609 ms - 165[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 26.874 ms - 167[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [36m304[0m 9.194 ms - -[0m
+[0mGET /users/profile/css/header.css [33m404[0m 35.553 ms - 167[0m
+[0mGET /users/profile/js/home.js [33m404[0m 29.746 ms - 163[0m
+[0mGET /users/profile/css/home.css [33m404[0m 23.315 ms - 165[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 38.886 ms - 167[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 25.130 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 22.076 ms - 173[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [36m304[0m 11.933 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 11.703 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 22.837 ms - 167[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 26.461 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 26.321 ms - 173[0m
+[0mGET /users/profile/css/home.css [33m404[0m 31.189 ms - 165[0m
+[0mGET /users/profile/js/home.js [33m404[0m 31.232 ms - 163[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [36m304[0m 9.115 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 8.246 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 20.899 ms - 167[0m
+[0mGET /users/profile/js/home.js [33m404[0m 14.209 ms - 163[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 20.227 ms - 167[0m
+[0mGET /users/profile/css/home.css [33m404[0m 20.002 ms - 165[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 23.060 ms - 173[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [36m304[0m 8.141 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 9.238 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 15.172 ms - 167[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 20.562 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 14.962 ms - 173[0m
+[0mGET /users/profile/css/home.css [33m404[0m 16.299 ms - 165[0m
+[0mGET /users/profile/js/home.js [33m404[0m 19.813 ms - 163[0m
+[0mGET / [36m304[0m 37.812 ms - -[0m
+[0mGET / [36m304[0m 35.409 ms - -[0m
+[0mGET /users/profile/5f0e9a4c69a45a09a20afc5e [36m304[0m 9.838 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 10.472 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 22.010 ms - 167[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 24.542 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 33.437 ms - 173[0m
+[0mGET /users/profile/css/home.css [33m404[0m 34.889 ms - 165[0m
+[0mGET /users/profile/js/home.js [33m404[0m 37.703 ms - 163[0m
+[0mGET /users/profile/5f0e9a4c69a45a09a20afc5e [36m304[0m 37.996 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 21.901 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 50.584 ms - 167[0m
+[0mGET /users/profile/css/home.css [33m404[0m 41.941 ms - 165[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 49.346 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 54.099 ms - 173[0m
+[0mGET /users/profile/js/home.js [33m404[0m 54.554 ms - 163[0m
+[0mGET /users/profile/5f0e9a4c69a45a09a20afc5e [36m304[0m 12.717 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 15.431 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 22.045 ms - 173[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 24.150 ms - 167[0m
+[0mGET /users/profile/js/home.js [33m404[0m 23.637 ms - 163[0m
+[0mGET /users/profile/css/header.css [33m404[0m 39.835 ms - 167[0m
+[0mGET /users/profile/css/home.css [33m404[0m 31.293 ms - 165[0m
+[0mGET /users/profile/5f0e9a4c69a45a09a20afc5e [36m304[0m 40.324 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 22.824 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 50.941 ms - 167[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 54.265 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 52.234 ms - 173[0m
+[0mGET /users/profile/css/home.css [33m404[0m 55.270 ms - 165[0m
+[0mGET /users/profile/js/home.js [33m404[0m 55.794 ms - 163[0m
+[0mGET /users/profile/5f0e9a4c69a45a09a20afc5e [36m304[0m 12.634 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 17.096 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 21.658 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 26.762 ms - 173[0m
+[0mGET /users/profile/css/home.css [33m404[0m 24.201 ms - 165[0m
+[0mGET /users/profile/js/home.js [33m404[0m 24.334 ms - 163[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 44.617 ms - 167[0m
+[0mGET /users/profile/5f0e9a4c69a45a09a20afc5e [36m304[0m 8.247 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 13.056 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 24.852 ms - 167[0m
+[0mGET /users/profile/css/home.css [33m404[0m 23.601 ms - 165[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 25.077 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 23.991 ms - 173[0m
+[0mGET /users/profile/js/home.js [33m404[0m 27.298 ms - 163[0m
+[0mGET /users/profile/5f0e9a4c69a45a09a20afc5e [36m304[0m 36.877 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 22.496 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 35.007 ms - 167[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 38.116 ms - 167[0m
+[0mGET /users/profile/js/home.js [33m404[0m 44.989 ms - 163[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 46.279 ms - 173[0m
+[0mGET /users/profile/css/home.css [33m404[0m 47.548 ms - 165[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 13.363 ms - 173[0m
+[0mGET /users/profile/5f0e9a4c69a45a09a20afc5e [36m304[0m 10.829 ms - -[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 9.501 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 19.483 ms - 167[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 21.013 ms - 167[0m
+[0mGET /users/profile/js/home.js [33m404[0m 28.004 ms - 163[0m
+[0mGET /users/profile/css/home.css [33m404[0m 29.712 ms - 165[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 32.104 ms - 173[0m
+[0mGET /users/profile/5f0e9a4c69a45a09a20afc5e [36m302[0m 3.572 ms - 72[0m
+[0mGET /users/sign-in [32m200[0m 4.806 ms - 2116[0m
+[0mGET /users/js/home.js [33m404[0m 5.368 ms - 155[0m
+[0mGET /users/css/layout.css [33m404[0m 1.690 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 1.434 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 3.011 ms - 159[0m
+[0mGET /users/css/home.css [33m404[0m 6.707 ms - 157[0m
+[0mGET /users/images/google-logo.png [33m404[0m 1.854 ms - 167[0m
+[0mGET /users/sign-in [36m304[0m 2.810 ms - -[0m
+[0mGET /users/css/layout.css [33m404[0m 1.649 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 3.465 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 3.145 ms - 159[0m
+[0mGET /users/css/home.css [33m404[0m 3.258 ms - 157[0m
+[0mGET /users/js/home.js [33m404[0m 5.760 ms - 155[0m
+[0mGET /users/images/google-logo.png [33m404[0m 1.892 ms - 167[0m
+[0mPOST /users/create-session [36m302[0m 140.030 ms - 46[0m
+[0mGET / [32m200[0m 40.700 ms - 17368[0m
+[0mGET /users/profile/5f0e9a4c69a45a09a20afc5e [32m200[0m 20.226 ms - 2970[0m
+[0mGET /users/profile/css/layout.css [33m404[0m 10.169 ms - 167[0m
+[0mGET /users/profile/css/header.css [33m404[0m 16.871 ms - 167[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 27.403 ms - 173[0m
+[0mGET /users/profile/js/home.js [33m404[0m 25.967 ms - 163[0m
+[0mGET /users/profile/css/home.css [33m404[0m 29.881 ms - 165[0m
+[0mGET /users/profile/css/footer.css [33m404[0m 37.103 ms - 167[0m
+[0mGET /users/profile/5f0e9a4c69a45a09a20afc5e [32m200[0m 35.892 ms - 2976[0m
+[0mGET / [32m200[0m 51.258 ms - 17201[0m
+[0mGET /users/profile/5f0e9a4c69a45a09a20afc5e [36m304[0m 11.250 ms - -[0m
+[0mGET /users/sign-out [36m302[0m 20.259 ms - 46[0m
+[0mGET / [32m200[0m 23.527 ms - 9341[0m
+[0mGET /users/sign-in [32m200[0m 4.194 ms - 2122[0m
+::1 - - [06/Aug/2020:01:57:15 +0000] "GET /users/sign-in HTTP/1.1" 200 2126 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:01:57:15 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:01:57:20 +0000] "GET / HTTP/1.1" 200 3633 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:01:57:20 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:01:57:20 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:16:01 +0000] "GET / HTTP/1.1" 200 3637 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:16:01 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:16:02 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:16:02 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:16:02 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:16:14 +0000] "GET /users/sign-in HTTP/1.1" 200 2176 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:16:14 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:16:54 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:16:54 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:16:54 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:16:54 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:16:54 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:32:54 +0000] "GET / HTTP/1.1" 200 3633 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:32:54 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:32:54 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:38:23 +0000] "GET / HTTP/1.1" 200 3678 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:38:23 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:38:24 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:38:25 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:48:22 +0000] "GET / HTTP/1.1" 200 3678 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:48:23 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:48:39 +0000] "GET /users/sign-in HTTP/1.1" 200 2164 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:48:39 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:48:44 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:48:44 +0000] "GET / HTTP/1.1" 200 7249 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:48:45 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:48:51 +0000] "GET / HTTP/1.1" 200 7068 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:02:48:51 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:03:19:14 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+::1 - - [06/Aug/2020:03:19:14 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+[0mGET / [32m200[0m 59.176 ms - 9163[0m

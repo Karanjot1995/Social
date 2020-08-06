@@ -1,9 +1,9 @@
 <div class="text-center" id="signin-page">
   <h1>Sign In</h1>
   <form class="signup" action="/users/create-session" method="POST">
-    <input type="email" name="email" placeholder="Email" required/>
-    <input type="password" name="password" placeholder="Password" required/>
-    <input type="submit" class="btn-primary" value="Sign In"/>
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <input type="submit" class="btn-primary" value="Sign In" />
   </form>
   <a href="/users/forgot-password">Forgot password?</a>
 
@@ -13,7 +13,7 @@
     <span class="label">Sign in with:</span>
     <a id="g-login-btn" href="/users/auth/google">
       <div id="customBtn" class="customGPlusSignIn">
-        <img class="icon" src="/images/google-logo.png" height="40px" width="40px"/>
+        <img class="icon" src="<%= assetPath('images/google-logo.png') %>" height="40px" width="40px" />
         <span class="buttonText">Google</span>
       </div>
     </a>

@@ -31,7 +31,7 @@
         <% if(friendship.to_user.avatar){ %>
         <img class="profile-pic" src="<%= friendship.to_user.avatar %>" />
         <%}else{%>
-        <img class="profile-pic" src="/images/user.png" />
+        <img class="profile-pic" src="<%= assetPath('images/user.png') %>" />
         <%}%>
           <a href="/users/profile/<%= friendship.to_user.id %>">
         <%= friendship.to_user.name %>
@@ -44,7 +44,7 @@
         <% if(friendship.from_user.avatar){ %>
         <img class="profile-pic" src="<%= friendship.from_user.avatar %>" />
         <%}else{%>
-        <img class="profile-pic" src="/images/user.png" />
+        <img class="profile-pic" src="<%= assetPath('images/user.png') %>" />
         <%}%>
                   <a href="/users/profile/<%= friendship.from_user.id %>">
         <%= friendship.from_user.name %>
@@ -66,7 +66,7 @@
           <% if(user.avatar){ %>
           <img class="profile-pic" src="<%= user.avatar %>" />
           <%}else{%>
-          <img class="profile-pic" src="/images/user.png" />
+          <img class="profile-pic" src="<%= assetPath('images/user.png') %>" />
           <%}%>
               <a href="/users/profile/<%= user.id %>">
           <%= user.name %>
@@ -82,10 +82,10 @@
   </section>
 
 </div>
-<script src="/js/home_posts.js"></script>
-<script src="/js/home_post_comments.js"></script>
+<script src="<%= assetPath('js/home_posts.js') %>"></script>
+<script src="<%= assetPath('js/home_post_comments.js') %>"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
-<script src="/js/chat_engine.js"></script>
+<script src="<%= assetPath('js/chat_engine.js') %>"></script>
 
 <%if(locals.user){%>
 <script>

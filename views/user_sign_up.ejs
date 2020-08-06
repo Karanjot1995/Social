@@ -1,20 +1,20 @@
 <div id="signup-page" class=" text-center">
   <h1>Sign up</h1>
   <form class="signup" action="/users/create" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required/>
-    <input type="email" name="email" placeholder="Your Email" required/>
-    <input type="password" name="password" placeholder="enter password" required/>
-    <input type="password" name="confirm_password" placeholder="confirm password" required/>
-    <input type="submit" class="btn-primary" value="Sign Up"/>
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="password" name="password" placeholder="enter password" required />
+    <input type="password" name="confirm_password" placeholder="confirm password" required />
+    <input type="submit" class="btn-primary" value="Sign Up" />
   </form>
-  
+
   <h3 class="text-center">OR</h3>
-  
+
   <div id="gSignInWrapper">
     <span class="label">Sign in with:</span>
     <a id="g-login-btn" href="/users/auth/google">
       <div id="customBtn" class="customGPlusSignIn">
-        <img class="icon" src="/images/google-logo.png" height="40px" width="40px"/>
+        <img class="icon" src="/<%= assetPath('images/google-logo.png') %>" height="40px" width="40px" />
         <span class="buttonText">Google</span>
       </div>
     </a>
