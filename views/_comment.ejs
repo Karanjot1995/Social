@@ -2,7 +2,7 @@
   <% if(comment.user.avatar){ %>
   <img class="profile-pic" src="<%= comment.user.avatar %>" />
   <%}else{%>
-  <img class="profile-pic" src="<%= assetPath('images/user.png') %>" />
+  <img class="profile-pic" src="/uploads/images/user.png" />
   <%}%>
   <div>
     <p><%= comment.content %></p>

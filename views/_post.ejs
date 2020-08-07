@@ -7,7 +7,7 @@
     <% if(post.user.avatar){ %>
     <img class="profile-pic" src="<%= post.user.avatar %>" />
     <%}else{%>
-    <img class="profile-pic" src="<%= assetPath('images/user.png') %>" />
+    <img class="profile-pic" src="/uploads/images/user.png" />
     <%}%>
     <div>
       <p><%= post.content %></p>
