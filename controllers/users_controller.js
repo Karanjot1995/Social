@@ -248,3 +248,8 @@ module.exports.addFriend = async function (req, res) {
   // console.log(req.query);
   return res.redirect("back");
 };
+
+module.exports.chatFriend = async function(req,res){
+  let friend = await User.findById(req.query.id)
+  res.json({friend:friend})
+}

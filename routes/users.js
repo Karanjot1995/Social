@@ -35,6 +35,9 @@ router.post(
   usersController.newPasswordSuccess
 );
 
+
+router.get('/friend',passport.checkAuthentication, usersController.chatFriend)
+
 //use passport as a middleware to authenticate
 router.post(
   "/create-session",

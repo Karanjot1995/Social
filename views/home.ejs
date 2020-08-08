@@ -20,45 +20,48 @@
     </div>
   </section>
 
-  <section class="user-friends" style="width: 25%;">
-    <% if(locals.user) { %>
-    <h4>Friends</h4>
-    <%for(friendship of locals.user.friendships){%>
 
-    <% if(locals.user.id == friendship.from_user.id) { %>
-    <ul>
-      <li>
-        <% if(friendship.to_user.avatar){ %>
-        <img class="profile-pic" src="<%= friendship.to_user.avatar %>" />
-        <%}else{%>
-        <img class="profile-pic" src="/uploads/images/user.png" />
+  <button class="toggle-friends d-none">Friends</button>
+
+  <section class="user-friends d-none" style="width: 25%;">
+
+    <div class="friends-list">
+      <% if(locals.user) { %>
+        <h4>Friends</h4>
+        <%for(friendship of locals.user.friendships){%>
+        <ul>
+          <li class="d-flex align-items-center">
+            <% if(locals.user.id == friendship.from_user.id) { %>
+              <% if(friendship.to_user.avatar){ %>
+                <img class="profile-pic" src="<%= friendship.to_user.avatar %>" />
+              <%}else{%>
+                <img class="profile-pic" src="/uploads/images/user.png" />
+              <%}%>
+              <div class="d-flex flex-column">
+                <a href="/users/profile/<%= friendship.to_user.id %>" class="fs-20"><%= friendship.to_user.name %> </a>
+                <a href="#" class="chat-with" id="<%= friendship.to_user.id %>">Chat</a>
+              </div>
+            <%}else{%>
+              <% if(friendship.from_user.avatar){ %>
+                <img class="profile-pic" src="<%= friendship.from_user.avatar %>" />
+              <%}else{%>
+                <img class="profile-pic" src="/uploads/images/user.png" />
+              <%}%>
+              <div class="d-flex flex-column">
+                <a href="/users/profile/<%= friendship.from_user.id %>" class="fs-20"><%= friendship.from_user.name %></a>
+                <a href="#" class="chat-with" id="<%= friendship.from_user.id %>">Chat</a>
+              </div>
+            <%}%>
+        </li>
+    
+      </ul>
+    
+    
         <%}%>
-          <a href="/users/profile/<%= friendship.to_user.id %>">
-        <%= friendship.to_user.name %>
-        </a>
-      </li>
-    </ul>
-    <%}else{%>
-    <ul>
-      <li>
-        <% if(friendship.from_user.avatar){ %>
-        <img class="profile-pic" src="<%= friendship.from_user.avatar %>" />
-        <%}else{%>
-        <img class="profile-pic" src="/uploads/images/user.png" />
-        <%}%>
-          <a href="/users/profile/<%= friendship.from_user.id %>">
-        <%= friendship.from_user.name %>
-        </a>
-      </li>
-    </ul>
-    <%}%>
-
-
-    <%}%>
     <h4>All Users</h4>
-
+    
     <% } %>
-
+    
     <div>
       <% for(let user of all_users){ %>
       <ul>
@@ -68,13 +71,16 @@
           <%}else{%>
           <img class="profile-pic" src="/uploads/images/user.png" />
           <%}%>
-              <a href="/users/profile/<%= user.id %>">
+                  <a href="/users/profile/<%= user.id %>">
           <%= user.name %>
           </a>
         </li>
       </ul>
       <%}%>
+        </div>
+
     </div>
+   
 
   </section>
   <section>
@@ -89,6 +95,42 @@
 
 <%if(locals.user){%>
 <script>
-  new ChatEngine('user-chat-box', '<%= locals.user.email%>')
+  let user = <%-JSON.stringify(locals.user)%>
+  // var user = {
+  //   name:'<%=locals.user.name%>',
+  //   id:'<%=locals.user._id%>'
+  // }
+  // console.log(user)
+  $('.chat-with').click( async function(e){
+    e.preventDefault()
+    let friendId = $(this).attr('id')
+    // console.log($(this).attr('id'))
+    let res = await fetch(`/users/friend/?id=${friendId}`)
+    let data = await res.json()
+    let friend = data.friend
+    console.log(friend)
+
+    $('#chat-box').removeClass('d-none');
+    if (!$('#chat-box').hasClass('d-none')) {
+      $('#toggle-chat').html('Close Chat')
+    } else {
+      $('#toggle-chat').html('Open Chat')
+    }
+    // new ChatEngine('user-chat-box', user , friend)
+
+  })
+  new ChatEngine('user-chat-box', user.email)
+
+  $('.toggle-friends').click(function(){
+    $('.user-friends').toggleClass('d-none')
+    if(!$('.user-friends').hasClass('d-none')){
+      $(this).text('X')
+      $(this).addClass('opened')
+    }else{
+      $(this).text('Friends')
+      $(this).removeClass('opened')
+    }
+  })
+
 </script>
 <%}%>

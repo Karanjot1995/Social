@@ -25,7 +25,9 @@ const customMware = require("./config/middleware");
 //setup chat server to
 const chatServer = require('http').Server(app)
 // const io = require('socket.io')(chatServer, options);
-const chatSockets = require('./config/chat_sockets').chatSockets(chatServer)
+let nicknames = {};
+let rooms = []
+const chatSockets = require('./config/chat_sockets').chatSockets(chatServer, nicknames,rooms)
 chatServer.listen(5000)
 console.log('Chat server listening on port 5050')
 const path = require('path')
