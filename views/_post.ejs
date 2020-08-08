@@ -4,14 +4,17 @@
   <% } %>
 
   <div class="post-content">
-    <% if(post.user.avatar){ %>
-    <img class="profile-pic" src="<%= post.user.avatar %>" />
-    <%}else{%>
-    <img class="profile-pic" src="/uploads/images/user.png" />
-    <%}%>
+    <div class="d-flex flex-column text-center mr-3">
+      <% if(post.user.avatar){ %>
+        <img class="profile-pic mr-0" src="<%= post.user.avatar %>" />
+      <%}else{%>
+        <img class="profile-pic mr-0" src="/uploads/images/user.png" />
+      <%}%>
+      <small><%= post.user.name %></small>
+    </div>
+    
     <div>
       <p><%= post.content %></p>
-    <small><%= post.user.name %></small>
   </div>
   </div>
   <% if(locals.user) { %>

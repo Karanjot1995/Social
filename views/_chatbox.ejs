@@ -3,12 +3,11 @@
 
 <%if(locals.user){%>
 
+
 <div id="user-chat-box">
   <div class="toggle-chat d-flex align-items-center justify-content-center bg-blue" id="toggle-chat">
     Open Chat
   </div>
-
-
 
   <div class="d-none" id="chat-box">
     <!-- <% for(friend of locals.user.friendships){%>
@@ -25,11 +24,27 @@
     <%}%> -->
 
     <ul id="chat-message-list">
-
-      <!-- <li class="chat-user"></li>
-      <li class="chat-friend"></li> -->
-
-
+      <% for ( chat of chats) { %>
+        <% if(chat.user_email== locals.user.email) { %>
+          <li class="user">
+            <p>
+              <%= chat.message%>
+            </p>
+            <p class="name">
+              -<%= chat.user_name %>
+            </p>
+          </li>
+        <% }else{ %>
+          <li class="friend">
+            <p>
+              <%= chat.message%>
+            </p>
+            <p class="name">
+              -<%= chat.user_name %>
+            </p>
+          </li>
+        <% } %>
+      <% } %>
     </ul>
     <div id="chat-message-input-container" class="w-100 d-flex">
       <input id="chat-message-input" class="w-75 chat-input" placeholder="Type message here">

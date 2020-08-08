@@ -1,6 +1,8 @@
 const Post = require("../models/post");
 const Comment = require("../models/comment");
 const User = require("../models/user");
+const ChatRoom = require("../models/chat_room");
+
 // const Friendship = require("../models/friendships");
 
 module.exports.home = async function (req, res) {
@@ -18,12 +20,15 @@ module.exports.home = async function (req, res) {
       })
       .populate("likes");
     let users = await User.find({})
+
+    let chats = await ChatRoom.find({})
     // console.log(req.user);
 
     return res.render("home", {
       title: "Home",
       posts: allPosts,
       all_users: users,
+      chats:chats
     });
   } catch (err) {
     console.log("error", err);

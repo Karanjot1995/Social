@@ -67,8 +67,13 @@
     max-width: 450px; } }
 
 @media (max-width: 680px) {
+  #home #feed-posts #new-post-form textarea {
+    max-width: 250px !important; }
+  .toggle-like-button {
+    font-size: 15px; }
   #user-chat-box {
-    width: 250px !important; }
+    width: 100% !important;
+    right: 0 !important; }
     #user-chat-box #chat-message-input-container {
       height: 35px !important; }
     #user-chat-box #toggle-chat {
@@ -83,8 +88,14 @@
     color: white; }
   .toggle-friends.opened {
     top: 0; }
-  .post p, .post small {
+  .post p {
+    font-size: 18px; }
+  .post small {
     font-size: 15px; }
+  .post .comments-list p {
+    font-size: 16px; }
+  .post .comments-list small {
+    font-size: 12px; }
   h1, h4 {
     font-size: 20px; }
   #layout-main {

@@ -3,6 +3,7 @@
     <h1>
       Social | <%= title %>
     </h1>
+
     <% if(locals.user) { %>
     <div class="create-post">
       <h4>What's on your mind?</h4>
@@ -106,11 +107,9 @@
   $('.chat-with').click( async function(e){
     e.preventDefault()
     let friendId = $(this).attr('id')
-    // console.log($(this).attr('id'))
     let res = await fetch(`/users/friend/?id=${friendId}`)
     let data = await res.json()
     let friend = data.friend
-    console.log(friend)
 
     $('#chat-box').removeClass('d-none');
     if (!$('#chat-box').hasClass('d-none')) {
@@ -121,7 +120,7 @@
     // new ChatEngine('user-chat-box', user , friend)
 
   })
-  new ChatEngine('user-chat-box', user.email)
+  new ChatEngine('user-chat-box', user.email, user.name)
 
   $('.toggle-friends').click(function(){
     $('.user-friends').toggleClass('d-none')

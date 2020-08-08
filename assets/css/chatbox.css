@@ -17,9 +17,14 @@
       margin-bottom: 20px;
       display: flex;
       align-items: center;
-      padding: 10px; }
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
       #user-chat-box #chat-message-list .friend p, #user-chat-box #chat-message-list .user p {
         margin: 0; }
+      #user-chat-box #chat-message-list .friend p.name, #user-chat-box #chat-message-list .user p.name {
+        font-size: 12px; }
     #user-chat-box #chat-message-list .friend {
       margin-left: 20px;
       background: #FF8080; }

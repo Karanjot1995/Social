@@ -4,16 +4,16 @@ const chatRoomSchema = new mongoose.Schema({
   //comment belongs to a  user
   user_email : {
     type : String,
-    ref: 'User'
+    required:true
   },
-  to : {
+  user_name : {
     type : String,
-    ref: 'Post'
+    required:true
   },
-  messages:[{
+  message:{
     type:String,
-    // required:true
-  }]
+    required:true
+  }
   
 },{
   timestamps:true

@@ -1,3 +1,4 @@
+const ChatRoom = require('../models/chat_room')
 
 module.exports.chatSockets = function(socketServer){
     let io = require('socket.io')(socketServer);
@@ -19,7 +20,13 @@ module.exports.chatSockets = function(socketServer){
         });
 
         // CHANGE :: detect send_message and broadcast to everyone in the room
-        socket.on('send_message', function(data){
+        socket.on('send_message', async function(data){
+            let chat = await ChatRoom.create({
+                user_email:data.user_email,
+                user_name:data.user_name,
+                message: data.message
+            })
+            data.chat = chat
             io.in(data.chatroom).emit('receive_message', data);
         });
 
