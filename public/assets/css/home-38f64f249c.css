@@ -1,0 +1,137 @@
+#home {
+  display: flex;
+  justify-content: space-between; }
+  #home #feed-posts {
+    margin-left: 25%;
+    width: 45%; }
+  #home .create-post {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px; }
+  #home #new-post-form {
+    background-color: #fff; }
+  #home .post {
+    border: 1px solid #e0e0e0;
+    margin: 10px auto;
+    background: #fff; }
+    #home .post .post-content {
+      display: flex;
+      align-items: center;
+      font-size: 25px;
+      text-align: left;
+      padding: 30px 10px; }
+  #home .post-comment {
+    text-align: center;
+    border-top: 1px solid #e0e0e0; }
+    #home .post-comment form {
+      margin: 0;
+      display: flex;
+      justify-content: center; }
+      #home .post-comment form input {
+        margin: 0;
+        height: 50px; }
+    #home .post-comment .write-comment {
+      width: 80%; }
+  #home .comments-list li {
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    padding: 10px;
+    align-items: center; }
+    #home .comments-list li p {
+      margin-bottom: 0; }
+
+.user-friends {
+  width: 25%;
+  padding: 20px; }
+  .user-friends li {
+    padding: 20px 0px; }
+  .user-friends .profile-pic {
+    height: 50px !important;
+    width: 50px; }
+
+.profile-pic {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+  border-radius: 50%; }
+
+@media (max-width: 1200px) {
+  #layout-main {
+    padding: 50px 20px; }
+  .user-friends {
+    padding-right: 0;
+    margin-left: 10%; }
+  #home #feed-posts {
+    margin-left: 15%;
+    width: 55%;
+    max-width: 450px; } }
+
+@media (max-width: 680px) {
+  #home #feed-posts #new-post-form textarea {
+    max-width: 250px !important; }
+  .toggle-like-button {
+    font-size: 15px; }
+  #user-chat-box {
+    width: 100% !important;
+    right: 0 !important; }
+    #user-chat-box #chat-message-input-container {
+      height: 35px !important; }
+    #user-chat-box #toggle-chat {
+      height: 30px !important; }
+  .toggle-friends {
+    display: block !important;
+    position: fixed;
+    top: 45px;
+    right: 0;
+    z-index: 999;
+    background: rgba(0, 112, 223, 0.6);
+    color: white; }
+  .toggle-friends.opened {
+    top: 0; }
+  .post p {
+    font-size: 18px; }
+  .post small {
+    font-size: 15px; }
+  .post .comments-list p {
+    font-size: 16px; }
+  .post .comments-list small {
+    font-size: 12px; }
+  h1, h4 {
+    font-size: 20px; }
+  #layout-main {
+    padding: 50px 10px; }
+  #home #feed-posts {
+    margin: auto;
+    width: 100%;
+    max-width: 450px; }
+    #home #feed-posts #new-post-form textarea {
+      max-width: 200px; }
+  .user-friends {
+    position: fixed;
+    text-align: center;
+    color: white;
+    top: 0;
+    right: 0;
+    width: 120px !important;
+    padding: 5px;
+    height: 100%;
+    overflow: scroll;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7); }
+    .user-friends .friends-list {
+      padding-top: 50px; }
+    .user-friends ul li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .user-friends ul li img {
+        margin: 0; }
+      .user-friends ul li a {
+        font-size: 15px;
+        text-align: center;
+        color: white; } }
+
+@media (min-width: 680px) {
+  .user-friends {
+    display: block !important; } }
