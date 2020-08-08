@@ -34,8 +34,6 @@ const path = require('path')
 // console.log(env.asset_path)
 
 
-console.log(process.env.CLIENT);
-
 if (env.name == 'development') {
   app.use(
     sassMiddleware({
