@@ -11,14 +11,14 @@ var cleanCss = require('gulp-clean-css');
 
 
 
-gulp.task('css', function () {
+gulp.task('css', function (done) {
   console.log('minifying css...');
   gulp.src('./assets/sass/**/*.scss')
     .pipe(sass())
     .pipe(cssnano())
     .pipe(gulp.dest('./assets.css'));
 
-  return gulp.src('./assets/**/*.css')
+  gulp.src('./assets/**/*.css')
     .pipe(cleanCss())
     .pipe(rev())
     .pipe(gulp.dest('./public/assets'))
@@ -27,11 +27,12 @@ gulp.task('css', function () {
       merge: true
     }))
     .pipe(gulp.dest('./public/assets'));
+    done()
 });
 
-gulp.task('js', function () {
+gulp.task('js', function (done) {
   console.log('minifying js...');
-  return gulp.src('./assets/**/*.js')
+   gulp.src('./assets/**/*.js')
     .pipe(minify({
       ext: {
         min: '.js'
@@ -45,7 +46,7 @@ gulp.task('js', function () {
       merge: true
     }))
     .pipe(gulp.dest('./public/assets'));
-
+    done();
 });
 // once uglified then revised the name then put it into public/assets then put details into manifest
 
@@ -68,7 +69,7 @@ gulp.task('clean:assets', function (done) {
   done()
 });
 
-gulp.task('build', gulp.series('clean:assets', 'css', 'js'), function () {
+gulp.task('build', gulp.series('clean:assets', 'css', 'js'), function (done) {
   console.log('Building assets');
-  return
+  done();
 });
