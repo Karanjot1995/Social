@@ -39,7 +39,7 @@ const development = {
 
 const production = {
   name: 'production',
-  asset_path: process.env.SOCIAL_ASSET_PATH,
+  asset_path: "./assets",
   seession_cookie_key: process.env.SOCIAL_SESSION_COOKIE_KEY,
   db: process.env.SOCIAL_DB,
   smtp: {
