@@ -65,7 +65,7 @@ class ChatEngine{
             }));
 
             newMessage.append($('<p class="name">', {
-                'html': data.user_name
+                'html': data.chat.user_name
             }));
 
             newMessage.addClass(messageType);
