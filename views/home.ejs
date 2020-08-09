@@ -144,7 +144,12 @@
     console.log("fve",user.friendships)
     let userid = $(this).attr('id')
     console.log($(this).attr('id'))
+    if(user.friendships.length == 0){
+      $(this).attr('href',`/users/add-friend/?id=${userid}`)
+        $(this).text('+ Add Friend')
+      }
     for(friend of user.friendships){
+      
       console.log(friend.to_user._id,friend.from_user._id, "hi", userid)
       if(userid == friend.to_user._id || userid == friend.from_user._id ){
         $(this).attr('href','#')
