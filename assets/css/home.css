@@ -70,6 +70,11 @@
 @media (max-width: 680px) {
   #home #feed-posts #new-post-form textarea {
     max-width: 250px !important; }
+  #header .login a {
+    font-size: 22px; }
+  #header .social {
+    font-size: 27px;
+    font-weight: bold; }
   .toggle-like-button {
     font-size: 15px; }
   #user-chat-box {
