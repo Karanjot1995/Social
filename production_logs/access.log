@@ -10,3 +10,7 @@
 ::1 - - [08/Aug/2020:21:02:52 +0000] "GET /css/home.scss HTTP/1.1" 404 152 "-" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36"
 ::1 - - [08/Aug/2020:21:02:54 +0000] "GET /css/home.scss HTTP/1.1" 404 152 "-" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36"
 ::1 - - [08/Aug/2020:21:07:43 +0000] "GET / HTTP/1.1" 200 3978 "-" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36"
+::1 - - [09/Aug/2020:05:00:20 +0000] "GET / HTTP/1.1" 200 3978 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
+::1 - - [09/Aug/2020:05:00:20 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
+::ffff:127.0.0.1 - - [09/Aug/2020:05:00:23 +0000] "GET / HTTP/1.1" 200 3978 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
+::ffff:127.0.0.1 - - [09/Aug/2020:05:00:23 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://127.0.0.1:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
