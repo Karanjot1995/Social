@@ -65,19 +65,25 @@
     <% } %>
     
     <div>
+
       <h4>All Users</h4>
 
       <% for(let user of all_users){ %>
       <ul>
-        <li>
+        <li class="d-flex">
           <% if(user.avatar){ %>
           <img class="profile-pic" src="<%= user.avatar %>" />
           <%}else{%>
           <img class="profile-pic" src="/uploads/images/user.png" />
           <%}%>
-                  <a href="/users/profile/<%= user.id %>">
-          <%= user.name %>
-          </a>
+          <div class="d-flex flex-column">
+            <a href="/users/profile/<%= user.id %>">    
+              <%= user.name %>
+            </a>
+            <a class="friend-or-not" id="<%=user.id%>">
+            </a>
+          </div>
+            
         </li>
       </ul>
       <%}%>
@@ -131,6 +137,27 @@
     }else{
       $(this).text('Friends')
       $(this).removeClass('opened')
+    }
+  })
+
+  $('.friend-or-not').each(function(){
+    console.log("fve",user.friendships)
+    let userid = $(this).attr('id')
+    console.log($(this).attr('id'))
+    for(friend of user.friendships){
+      console.log(friend.to_user._id,friend.from_user._id, "hi", userid)
+      if(userid == friend.to_user._id || userid == friend.from_user._id ){
+        $(this).attr('href','#')
+        $(this).text('Remove Friend')
+        if(userid == user._id){
+        $(this).addClass('d-none')
+        }
+        return 
+      }else{
+        $(this).attr('href',`/users/add-friend/?id=${userid}`)
+        $(this).text('+ Add Friend')
+      }
+      
     }
   })
 
