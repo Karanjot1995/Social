@@ -31,6 +31,11 @@
     <div class="friends-list">
       <% if(locals.user) { %>
         <h4>Friends</h4>
+
+        <%if(locals.user.friendships.length == 0){%>
+          <p>Add friends...</p>
+        <%}%>
+
         <%for(friendship of locals.user.friendships){%>
         <ul>
           <li class="d-flex align-items-center">
