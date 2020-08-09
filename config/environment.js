@@ -54,7 +54,7 @@ const production = {
   },
   google_client_id: process.env.SOCIAL_GOOGLE_CLIENT_ID,
   google_client_secret: process.env.SOCIAL_GOOGLE_CLIENT_SECRET,
-  google_callback_url: process.env.SOCIAL_GOOGLE_CALLBACK_URL,
+  google_callback_url: "http://social-web.in/users/auth/google/callback",
   jwt_secret: process.env.SOCIAL_JWT_SECRET,
   morgan: {
     mode: 'combined',

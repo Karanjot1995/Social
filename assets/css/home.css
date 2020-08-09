@@ -29,7 +29,8 @@
       justify-content: center; }
       #home .post-comment form input {
         margin: 0;
-        height: 50px; }
+        height: 50px;
+        min-width: 20%; }
     #home .post-comment .write-comment {
       width: 80%; }
   #home .comments-list li {

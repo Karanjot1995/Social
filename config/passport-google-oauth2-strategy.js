@@ -12,7 +12,7 @@ passport.use(new googleStrategy({
   // clientSecret: `${process.env.CLIENT_SECRET}`,
   clientID: env.google_client_id,
   clientSecret: env.google_client_secret,
-  callbackURL: "http://social-web.in/users/auth/google/callback",
+  callbackURL: env.google_callback_url
 }, function (accessToken, refreshToken, profile, done) {
 
   User.findOne({ email: profile.emails[0].value }).exec(function (err, user) {
