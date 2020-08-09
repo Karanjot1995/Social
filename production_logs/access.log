@@ -212,3 +212,17 @@
 [0mGET / [32m200[0m 21.268 ms - 19097[0m
 [0mGET /users/add-friend/?id=5f0e9a4c69a45a09a20afc5e [36m302[0m 17.910 ms - 88[0m
 [0mGET / [32m200[0m 28.361 ms - 20689[0m
+[0mGET / [32m200[0m 66.879 ms - 10425[0m
+[0mGET /users/sign-in [36m304[0m 7.011 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 70.720 ms - 72[0m
+[0mGET /users/sign-in [32m200[0m 3.561 ms - 2435[0m
+[0mPOST /users/create-session [36m302[0m 128.752 ms - 46[0m
+[0mGET / [32m200[0m 36.795 ms - 25751[0m
+[0mGET /users/friend/?id=5f0e9c65129cb30afa0b51e3 [32m200[0m 10.390 ms - 369[0m
+[0mGET /users/profile/5f0e9c65129cb30afa0b51e3 [32m200[0m 13.686 ms - 6851[0m
+[0mGET / [32m200[0m 36.334 ms - 25570[0m
+[0mGET /users/profile/5f15b6495bae07548fcd6e9e [32m200[0m 14.265 ms - 6800[0m
+[0mGET / [36m304[0m 36.636 ms - -[0m
+[0mGET /users/profile/5f0ef60038f60245df6138f5 [32m200[0m 10.004 ms - 6851[0m
+[0mGET / [36m304[0m 28.792 ms - -[0m
+[0mGET /users/profile/5f15b6495bae07548fcd6e9e [36m304[0m 10.569 ms - -[0m

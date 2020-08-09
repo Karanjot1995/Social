@@ -51,9 +51,39 @@
   <%}%> -->
 
 
-  <a href="/users/add-friend/?id=<%= profile_user.id %>">Add Friend</a>
+  <a  id="<%= profile_user.id %>" class="add-remove">Add Friend</a>
 
   <% } %>
+
+  <script>
+    const user = <%-JSON.stringify(locals.user)%>
+
+    $('.add-remove').each(function(){
+    console.log("fve",user.friendships)
+    let userid = $(this).attr('id')
+    console.log($(this).attr('id'))
+    if(user.friendships.length == 0){
+      $(this).attr('href',`/users/add-friend/?id=${userid}`)
+        $(this).text('+ Add Friend')
+      }
+    for(friend of user.friendships){
+      
+      console.log(friend.to_user._id,friend.from_user._id, "hi", userid)
+      if(userid == friend.to_user._id || userid == friend.from_user._id ){
+        $(this).attr('href','#')
+        $(this).text('Remove Friend')
+        if(userid == user._id){
+        $(this).addClass('d-none')
+        }
+        return 
+      }else{
+        $(this).attr('href',`/users/add-friend/?id=${userid}`)
+        $(this).text('+ Add Friend')
+      }
+      
+    }
+  })
+  </script>
 
 
 </div>
