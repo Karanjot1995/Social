@@ -152,5 +152,4 @@
     height: 10px; }
   .frame::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background-color: #cacaca;
-    background-color: rgba(0, 0, 0, 0.5); } }
+    background-color: rgba(160, 160, 160, 0.5); } }

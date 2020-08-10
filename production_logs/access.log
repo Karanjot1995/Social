@@ -761,3 +761,6 @@
 [0mGET / [36m304[0m 32.213 ms - -[0m
 [0mGET / [36m304[0m 27.049 ms - -[0m
 [0mGET / [36m304[0m 28.912 ms - -[0m
+::1 - - [10/Aug/2020:19:04:00 +0000] "GET / HTTP/1.1" 200 4880 "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
+::1 - - [10/Aug/2020:19:04:11 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36"
+[0mGET / [32m200[0m 54.401 ms - 10995[0m
