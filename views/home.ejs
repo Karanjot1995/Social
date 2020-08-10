@@ -45,7 +45,7 @@
               <%}else{%>
                 <img class="profile-pic" src="/uploads/images/user.png" />
               <%}%>
-              <div class="d-flex flex-column">
+              <div class="d-flex flex-column justify-content-center">
                 <a href="/users/profile/<%= friendship.to_user.id %>" class="fs-20"><%= friendship.to_user.name %> </a>
                 <a href="#" class="chat-with" id="<%= friendship.to_user.id %>">Chat</a>
               </div>
