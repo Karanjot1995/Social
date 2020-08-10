@@ -26,17 +26,26 @@ function removeImage(event) {
 }
 
 
-$(document).ready(function(){
+$(document).ready(function () {
   let str = $('.login .user-name a')[0].text
-  $('.login .user-name a')[0].text = str.substr( 0, str.indexOf( ' ', str.indexOf( ' ' ) + 1 ) )
+  $('.login .user-name a')[0].text = str.substr(0, str.indexOf(' ', str.indexOf(' ') + 1))
 
   let userNames = $('.post-content .user-name')
-  for(user of userNames){
-   let str2 =  $(user)[0].textContent
-   $(user)[0].textContent = str2.split(' ')[0]
-  } 
-  
+  for (user of userNames) {
+    let str2 = $(user)[0].textContent
+    $(user)[0].textContent = str2.split(' ')[0]
+  }
+
+  let chattext = $('#chat-message-list p')
+  for (chat of chattext) {
+    $(chat)[0].textContent = $(chat)[0].textContent.trim()
+    // console.log($(chat)[0].textContent.trim())
+  }
+  // console.log(chattext)
+  // $('#chat-message-list p').trim()
+
 })
+
 
 
 

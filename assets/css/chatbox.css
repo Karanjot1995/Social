@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 0;
   right: 10px;
-  width: 300px;
+  width: 350px;
   border: 1px solid gray;
   background: #fff; }
   #user-chat-box #chat-message-list {
@@ -12,8 +12,9 @@
     height: 300px;
     overflow-y: scroll; }
     #user-chat-box #chat-message-list .friend, #user-chat-box #chat-message-list .user {
+      height: auto;
       width: 45%;
-      min-height: 50px;
+      background: #46E3FF;
       margin-bottom: 20px;
       display: flex;
       align-items: center;
@@ -21,6 +22,9 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start; }
+      #user-chat-box #chat-message-list .friend p, #user-chat-box #chat-message-list .user p {
+        overflow-wrap: break-word;
+        width: 100%; }
       #user-chat-box #chat-message-list .friend p, #user-chat-box #chat-message-list .user p {
         margin: 0; }
       #user-chat-box #chat-message-list .friend p.name, #user-chat-box #chat-message-list .user p.name {
@@ -30,7 +34,6 @@
       background: #FF8080; }
     #user-chat-box #chat-message-list .user {
       margin-right: 20px;
-      background: #46E3FF;
       align-self: flex-end; }
   #user-chat-box #chat-message-input-container {
     height: 50px;

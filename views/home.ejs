@@ -69,12 +69,12 @@
     
     <% } %>
     
-    <div class="home-all-users">
+    <div>
 
       <h4>All Users</h4>
+      <ul class="home-all-users frame">
 
       <% for(let user of all_users){ %>
-      <ul>
         <li class="d-flex">
           <% if(user.avatar){ %>
           <img class="profile-pic" src="<%= user.avatar %>" />
@@ -90,9 +90,10 @@
           </div>
             
         </li>
-      </ul>
       <%}%>
-        </div>
+    </ul>
+
+      </div>
 
     </div>
    
