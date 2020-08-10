@@ -98,7 +98,7 @@ module.exports.create = async function (req, res) {
         email: req.body.email,
         password: hash,
       });
-
+      req.flash("success", "Success! Sign in to continue!");
       return res.redirect("/users/sign-in");
     } else {
       req.flash("error", "User already exists");
