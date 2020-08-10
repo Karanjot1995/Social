@@ -36,7 +36,7 @@
   <p>Add friends...</p>
   <%}%>
 
-  <ul class="my-friends">
+  <ul class="my-friends frame">
 
   <%for(friendship of locals.user.friendships){%>
   <li class="d-flex align-items-center">
@@ -50,6 +50,8 @@
       <a href="/users/profile/<%= friendship.to_user.id %>" class="fs-20"><%= friendship.to_user.name %> </a>
       <a href="#" class="chat-with" id="<%= friendship.to_user.id %>">Chat</a>
     </div>
+    <div class="online" id="online<%= friendship.to_user._id %>">
+    </div>
   <%}else{%>
       <% if(friendship.from_user.avatar){ %>
         <img class="profile-pic" src="<%= friendship.from_user.avatar %>" />
@@ -62,7 +64,10 @@
         </a>
         <a href="#" class="chat-with" id="<%= friendship.from_user.id %>">Chat</a>
       </div>
+      <div class="online" id="online<%= friendship.from_user._id %>">
+      </div>
     <%}%>
+
     </li>
   <%}%>
 </ul>
@@ -132,7 +137,7 @@
     // new ChatEngine('user-chat-box', user , friend)
 
   })
-  new ChatEngine('user-chat-box', user.email, user.name)
+  new ChatEngine('user-chat-box', user.email, user.name, user._id)
 
   $('.toggle-friends').click(function () {
     $('.user-friends').toggleClass('d-none')

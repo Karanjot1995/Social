@@ -238,7 +238,7 @@
   }
   .home-all-users,.my-friends{
     max-height:400px;
-    overflow-y: scroll;
+    overflow-y: auto;
     
   }
   .frame::-webkit-scrollbar {
@@ -246,7 +246,7 @@
 }
 
 .frame::-webkit-scrollbar:vertical {
-      background-color: #cacaca;
+        background-color: #cacaca;
 
     width: 8px;
 }
@@ -257,6 +257,8 @@
 
 .frame::-webkit-scrollbar-thumb {
     border-radius: 8px;
+          background-color: #cacaca;
+
     // border: 2px solid white; /* should match background, can't be transparent */
     background-color: rgba(0, 0, 0, .5);
 }
