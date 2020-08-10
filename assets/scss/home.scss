@@ -234,6 +234,11 @@
   .user-friends{
     display: block!important;
   }
+  .home-all-users{
+    max-height:100%;
+    overflow-y: scroll;
+  }
 }
+
 
 
