@@ -10,7 +10,10 @@
       <%}else{%>
       <img class="profile-pic mr-2" src="/uploads/images/user.png" />
       <%}%>
-      <small class="user-name"><%= post.user.name %></small>
+      <div class="d-flex flex-column align-items-start">
+        <small class="user-name"><%= post.user.name %></small>
+        <small class="created"><%= post.createdAt %></small>
+      </div>
     </div>
 
     <div>

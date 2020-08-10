@@ -30,6 +30,10 @@
     margin:10px auto;
     background: #fff;
     .post-content{
+      .created{
+        font-size: 14px;
+        color: #7c7c7c
+      }
       // display: flex;
       // align-items: center;
       font-size: 25px;
@@ -95,8 +99,8 @@
 }
 
 .profile-pic{
-  height:60px;
-  width: 60px;
+  height:45px;
+  width: 45px;
   margin-right: 10px;
   border-radius: 50%;
 }

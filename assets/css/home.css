@@ -18,6 +18,9 @@
       font-size: 25px;
       text-align: left;
       padding: 30px 10px; }
+      #home .post .post-content .created {
+        font-size: 14px;
+        color: #7c7c7c; }
   #home .post-comment {
     text-align: center;
     border-top: 1px solid #e0e0e0; }
@@ -49,8 +52,8 @@
     width: 50px; }
 
 .profile-pic {
-  height: 60px;
-  width: 60px;
+  height: 45px;
+  width: 45px;
   margin-right: 10px;
   border-radius: 50%; }
 
@@ -152,4 +155,4 @@
     height: 10px; }
   .frame::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background-color: rgba(160, 160, 160, 0.5); } }
+    background-color: rgba(150, 150, 150, 0.6); } }
