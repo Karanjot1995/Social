@@ -35,6 +35,7 @@ class ChatEngine {
         $('#send-message').click(function () {
             let msg = $('#chat-message-input').val();
 
+
             if (msg != '') {
                 self.socket.emit('send_message', {
                     message: msg,
@@ -43,6 +44,7 @@ class ChatEngine {
                     chatroom: 'social'
                 });
             }
+            $('#chat-message-input').val('');
         });
 
         self.socket.on('receive_message', function (data) {

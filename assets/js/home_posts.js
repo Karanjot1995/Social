@@ -28,6 +28,7 @@ let createPost = function () {
         console.log(error.responseText);
       },
     });
+    $(this).trigger('reset')
   });
 };
 
