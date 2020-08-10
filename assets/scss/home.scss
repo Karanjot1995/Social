@@ -246,8 +246,7 @@
 }
 
 .frame::-webkit-scrollbar:vertical {
-        background-color: #cacaca;
-
+    background-color: #cacaca;
     width: 8px;
 }
 
@@ -257,9 +256,7 @@
 
 .frame::-webkit-scrollbar-thumb {
     border-radius: 8px;
-          background-color: #cacaca;
-
-    // border: 2px solid white; /* should match background, can't be transparent */
+    // background-color: #cacaca;
     background-color: rgba(160, 160, 160, .5);
 }
 }
