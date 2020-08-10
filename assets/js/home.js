@@ -29,6 +29,12 @@ function removeImage(event) {
 $(document).ready(function(){
   let str = $('.login .user-name a')[0].text
   $('.login .user-name a')[0].text = str.substr( 0, str.indexOf( ' ', str.indexOf( ' ' ) + 1 ) )
+
+  let userNames = $(' .post-content .user-name')
+  for(user of userNames){
+   let str2 =  $(user)[0].textContent
+   $(user)[0].textContent = str2.split(' ')[0]
+  } 
   
 })
 
