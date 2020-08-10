@@ -170,6 +170,16 @@
       
     }
   })
+  
 
 </script>
 <%}%>
+<script>
+  $(document).ready(function(){
+  let userNames = $('.post-content .user-name')
+  for(user of userNames){
+   let str2 =  $(user)[0].textContent
+   $(user)[0].textContent = str2.split(' ')[0]
+  } 
+})
+</script>
