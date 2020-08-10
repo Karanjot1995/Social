@@ -30,67 +30,68 @@
 
     <div class="friends-list">
       <% if(locals.user) { %>
-        <h4>Friends</h4>
+  <h4>Friends</h4>
 
-        <%if(locals.user.friendships.length == 0){%>
-          <p>Add friends...</p>
-        <%}%>
+  <%if(locals.user.friendships.length == 0){%>
+  <p>Add friends...</p>
+  <%}%>
 
-        <%for(friendship of locals.user.friendships){%>
-        <ul>
-          <li class="d-flex align-items-center">
-            <% if(locals.user.id == friendship.from_user.id) { %>
-              <% if(friendship.to_user.avatar){ %>
-                <img class="profile-pic" src="<%= friendship.to_user.avatar %>" />
-              <%}else{%>
-                <img class="profile-pic" src="/uploads/images/user.png" />
-              <%}%>
-              <div class="d-flex flex-column justify-content-center">
-                <a href="/users/profile/<%= friendship.to_user.id %>" class="fs-20"><%= friendship.to_user.name %> </a>
-                <a href="#" class="chat-with" id="<%= friendship.to_user.id %>">Chat</a>
-              </div>
-            <%}else{%>
-              <% if(friendship.from_user.avatar){ %>
-                <img class="profile-pic" src="<%= friendship.from_user.avatar %>" />
-              <%}else{%>
-                <img class="profile-pic" src="/uploads/images/user.png" />
-              <%}%>
-              <div class="d-flex flex-column justify-content-center">
-                <a href="/users/profile/<%= friendship.from_user.id %>" class="fs-20"><%= friendship.from_user.name %></a>
-                <a href="#" class="chat-with" id="<%= friendship.from_user.id %>">Chat</a>
-              </div>
-            <%}%>
-        </li>
-    
-      </ul>
-    
-    
-        <%}%>
-    
-    <% } %>
-    
-    <div>
+  <ul class="my-friends">
 
-      <h4>All Users</h4>
-      <ul class="home-all-users frame">
-
-      <% for(let user of all_users){ %>
-        <li class="d-flex">
-          <% if(user.avatar){ %>
-          <img class="profile-pic" src="<%= user.avatar %>" />
-          <%}else{%>
-          <img class="profile-pic" src="/uploads/images/user.png" />
-          <%}%>
-          <div class="d-flex flex-column justify-content-center">
-            <a href="/users/profile/<%= user.id %>">    
-              <%= user.name %>
-            </a>
-            <a class="friend-or-not" id="<%=user.id%>">
-            </a>
-          </div>
-            
-        </li>
+  <%for(friendship of locals.user.friendships){%>
+  <li class="d-flex align-items-center">
+  <% if(locals.user.id == friendship.from_user.id) { %>
+    <% if(friendship.to_user.avatar){ %>
+      <img class="profile-pic" src="<%= friendship.to_user.avatar %>" />
+    <%}else{%>
+      <img class="profile-pic" src="/uploads/images/user.png" />
+    <%}%>
+    <div class="d-flex flex-column justify-content-center">
+      <a href="/users/profile/<%= friendship.to_user.id %>" class="fs-20"><%= friendship.to_user.name %> </a>
+      <a href="#" class="chat-with" id="<%= friendship.to_user.id %>">Chat</a>
+    </div>
+  <%}else{%>
+      <% if(friendship.from_user.avatar){ %>
+        <img class="profile-pic" src="<%= friendship.from_user.avatar %>" />
+      <%}else{%>
+        <img class="profile-pic" src="/uploads/images/user.png" />
       <%}%>
+      <div class="d-flex flex-column justify-content-center">
+        <a href="/users/profile/<%= friendship.from_user.id %>" class="fs-20">
+          <%= friendship.from_user.name %>
+        </a>
+        <a href="#" class="chat-with" id="<%= friendship.from_user.id %>">Chat</a>
+      </div>
+    <%}%>
+    </li>
+  <%}%>
+</ul>
+
+
+<% } %>
+
+<div>
+
+  <h4>All Users</h4>
+  <ul class="home-all-users frame">
+
+    <% for(let user of all_users){ %>
+    <li class="d-flex">
+      <% if(user.avatar){ %>
+      <img class="profile-pic" src="<%= user.avatar %>" />
+      <%}else{%>
+      <img class="profile-pic" src="/uploads/images/user.png" />
+      <%}%>
+          <div class="d-flex flex-column justify-content-center">
+            <a href="/users/profile/<%= user.id %>">
+      <%= user.name %>
+      </a>
+      <a class="friend-or-not" id="<%=user.id%>">
+      </a>
+</div>
+
+</li>
+<%}%>
     </ul>
 
       </div>
@@ -101,7 +102,7 @@
   </section>
   <section>
     <%- include('_chatbox') %>
-  </section>
+</section>
 
 </div>
 <script src="<%= assetPath('js/home_posts.js') %>"></script>
@@ -111,13 +112,11 @@
 
 <%if(locals.user){%>
 <script>
-  let user = <%-JSON.stringify(locals.user)%>
-  // var user = {
-  //   name:'<%=locals.user.name%>',
-  //   id:'<%=locals.user._id%>'
-  // }
-  // console.log(user)
-  $('.chat-with').click( async function(e){
+  let user = <%- JSON.stringify(locals.user) %>
+    // let usr = <% - user %>
+
+    // console.log(user)
+  $('.chat-with').click(async function (e) {
     e.preventDefault()
     let friendId = $(this).attr('id')
     let res = await fetch(`/users/friend/?id=${friendId}`)
@@ -135,52 +134,52 @@
   })
   new ChatEngine('user-chat-box', user.email, user.name)
 
-  $('.toggle-friends').click(function(){
+  $('.toggle-friends').click(function () {
     $('.user-friends').toggleClass('d-none')
-    if(!$('.user-friends').hasClass('d-none')){
+    if (!$('.user-friends').hasClass('d-none')) {
       $(this).text('X')
       $(this).addClass('opened')
-    }else{
+    } else {
       $(this).text('Friends')
       $(this).removeClass('opened')
     }
   })
 
-  $('.friend-or-not').each(function(){
-    console.log("fve",user.friendships)
+  $('.friend-or-not').each(function () {
+    // console.log("fve", user.friendships)
     let userid = $(this).attr('id')
-    console.log($(this).attr('id'))
-    if(user.friendships.length == 0){
-      $(this).attr('href',`/users/add-friend/?id=${userid}`)
-        $(this).text('+ Add Friend')
-      }
-    for(friend of user.friendships){
-      
-      console.log(friend.to_user._id,friend.from_user._id, "hi", userid)
-      if(userid == friend.to_user._id || userid == friend.from_user._id ){
-        $(this).attr('href','#')
+    // console.log($(this).attr('id'))
+    if (user.friendships.length == 0) {
+      $(this).attr('href', `/users/add-friend/?id=${userid}`)
+      $(this).text('+ Add Friend')
+    }
+    for (friend of user.friendships) {
+
+      // console.log(friend.to_user._id, friend.from_user._id, "hi", userid)
+      if (userid == friend.to_user._id || userid == friend.from_user._id) {
+        $(this).attr('href', '#')
         $(this).text('Remove Friend')
-        if(userid == user._id){
-        $(this).addClass('d-none')
+        if (userid == user._id) {
+          $(this).addClass('d-none')
         }
-        return 
-      }else{
-        $(this).attr('href',`/users/add-friend/?id=${userid}`)
+        return
+      } else {
+        $(this).attr('href', `/users/add-friend/?id=${userid}`)
         $(this).text('+ Add Friend')
       }
-      
+
     }
   })
-  
+
 
 </script>
 <%}%>
 <script>
-  $(document).ready(function(){
-  let userNames = $('.post-content .user-name')
-  for(user of userNames){
-   let str2 =  $(user)[0].textContent
-   $(user)[0].textContent = str2.split(' ')[0]
-  } 
-})
+  $(document).ready(function () {
+    let userNames = $('.post-content .user-name')
+    for (user of userNames) {
+      let str2 = $(user)[0].textContent
+      $(user)[0].textContent = str2.split(' ')[0]
+    }
+  })
 </script>

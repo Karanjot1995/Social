@@ -138,4 +138,18 @@
 
 @media (min-width: 680px) {
   .user-friends {
-    display: block !important; } }
+    display: block !important;
+    max-width: 250px; }
+  .home-all-users, .my-friends {
+    max-height: 400px;
+    overflow-y: scroll; }
+  .frame::-webkit-scrollbar {
+    -webkit-appearance: none; }
+  .frame::-webkit-scrollbar:vertical {
+    background-color: #cacaca;
+    width: 8px; }
+  .frame::-webkit-scrollbar:horizontal {
+    height: 10px; }
+  .frame::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5); } }

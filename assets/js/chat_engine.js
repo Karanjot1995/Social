@@ -61,13 +61,21 @@ class ChatEngine {
                 'html': data.chat.message
             }));
 
-            newMessage.append($('<p class="name">', {
-                'html': data.chat.user_name
+            newMessage.append($('<p>', {
+                'class': 'name',
+
+                'html': `-${data.chat.user_name}`
             }));
 
             newMessage.addClass(messageType);
 
             $('#chat-message-list').append(newMessage);
+
+           
+            let chatlist = $('#chat-message-list')[0]
+
+            $('#chat-message-list').scrollTop(chatlist.scrollHeight);
+           
         })
     }
 }

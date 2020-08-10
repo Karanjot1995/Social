@@ -234,29 +234,32 @@
 @media (min-width:680px){
   .user-friends{
     display: block!important;
+    max-width: 250px;;
   }
-  // .home-all-users{
-  //   max-height:450px;
-  //   overflow-y: scroll;
+  .home-all-users,.my-friends{
+    max-height:400px;
+    overflow-y: scroll;
     
-  // }
-//   .frame::-webkit-scrollbar {
-//     -webkit-appearance: none;
-// }
+  }
+  .frame::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
 
-// .frame::-webkit-scrollbar:vertical {
-//     width: 11px;
-// }
+.frame::-webkit-scrollbar:vertical {
+      background-color: #cacaca;
 
-// .frame::-webkit-scrollbar:horizontal {
-//     height: 11px;
-// }
+    width: 8px;
+}
 
-// .frame::-webkit-scrollbar-thumb {
-//     border-radius: 8px;
-//     border: 2px solid white; /* should match background, can't be transparent */
-//     background-color: rgba(0, 0, 0, .5);
-// }
+.frame::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.frame::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    // border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
 }
 
 

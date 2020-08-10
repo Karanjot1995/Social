@@ -8,12 +8,15 @@ module.exports.create = async function (req, res) {
     let post = await Post.create({
       content: req.body.content,
       user: req.user._id,
-    });
+    })
+
+    let newpost = await Post.findById(post._id).populate("user", { password: 0 })
 
     if (req.xhr) {
+
       return res.status(200).json({
         data: {
-          post: post,
+          post: newpost,
         },
         flash: {
           success: "Post published!",

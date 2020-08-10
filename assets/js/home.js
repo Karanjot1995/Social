@@ -44,6 +44,8 @@ $(document).ready(function () {
   // console.log(chattext)
   // $('#chat-message-list p').trim()
 
+
+
 })
 
 

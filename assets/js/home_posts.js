@@ -34,16 +34,15 @@ let createPost = function () {
 //method to create a post in DOM
 let newPostDom = function (post) {
   return $(`
-  <li  class="post" id="post-${post._id}">
-
+<li class="post" id="post-${post._id}">
   <a href="/posts/delete/${post._id}" class="delete-post-button"><i class="fa fa-close"></i></a>
-
-
   <div class="post-content">
-    <img class="profile-pic" src="/images/user.png" />
+    <div class="d-flex align-items-center text-center mr-3 mb-4">
+      <img class="profile-pic mr-2" src=${post.user.avatar} />
+      <small class="user-name">${post.user.name}</small>
+    </div>
     <div>
       <p>${post.content}</p>
-      <small><${post.user.name}</small>
     </div>
   </div>
   <div class="post-comment">
