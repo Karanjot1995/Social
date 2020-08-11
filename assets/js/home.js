@@ -42,13 +42,13 @@ $(document).ready(function () {
     // console.log($(chat)[0].textContent.trim())
   }
 
-  let dates = $('.created')
-  for(created of dates){
-    let createdDate = $(created)[0].textContent
-    $(created)[0].textContent = createdDate.substr(0, createdDate.indexOf(' ', createdDate.indexOf(' ', createdDate.indexOf(' ') + 1) + 1))
-  }
+  // let dates = $('.created')
+  // for(created of dates){
+  //   let createdDate = $(created)[0].textContent
+  //   $(created)[0].textContent = createdDate.substr(0, createdDate.indexOf(' ', createdDate.indexOf(' ', createdDate.indexOf(' ') + 1) + 1))
+  // }
 
-  console.log(dates)
+  // console.log(dates)
   // $('#chat-message-list p').trim()
 
 
