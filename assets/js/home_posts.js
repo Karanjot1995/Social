@@ -40,7 +40,11 @@ let newPostDom = function (post) {
   <div class="post-content">
     <div class="d-flex align-items-center text-center mr-3 mb-4">
       <img class="profile-pic mr-2" src=${post.user.avatar} />
-      <small class="user-name">${post.user.name}</small>
+      <div class="d-flex flex-column align-items-start">
+        <small class="user-name">${post.user.name}</small>
+        <small class="created">${post.createdAt}</small>
+      </div>
+
     </div>
     <div>
       <p>${post.content}</p>
